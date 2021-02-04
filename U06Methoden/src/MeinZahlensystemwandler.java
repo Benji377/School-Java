@@ -11,10 +11,19 @@ public class MeinZahlensystemwandler
 	 */
 	public static int getDigit (char nr) {
 		int ret = -1;
+		// Wandelt den Character nr in Großbuchstabe um
 		nr = Character.toUpperCase(nr);
+		// In der Asci Tabelle sind die Zahlen von 0 bis 9 folgendermaßen
+		// von 48 bis 57 numeriert
 		if ((int)nr >= 48 && (int)nr <= 57) {
+			// Somit wird einfach nur der numerische Wert übergeben und nicht 
+			// die Stelle in der Ascii Tabelle
 			ret = Character.getNumericValue(nr);
+		// Die Großbuchstaben von A bis Z gehen in der Ascii Tabelle
+		// von 65 bis 90
 		} else if ((int)nr >= 64 && (int)nr <= 90) {
+			// Damit 10 A entspricht, muss dem Wert in der asci Tabelle 55
+			// subtrahiert werden
 			ret = (int)nr - 55;
 		}
 		return ret;
@@ -30,9 +39,13 @@ public class MeinZahlensystemwandler
 	 */
 	public static char getDigit (int nr) {
 		char ret = '*';
+		// Wenn der übergebene Integer eine Ziffer zwischen 0 und 9 ist
 		if (nr >= 0 && nr <= 9) {
+			// Der Character ret ist gleich dem übergebenen Integer
 			ret = (char)(nr + '0');
+		// Wenn der übergebene Integer in ein Buchstabe umgewandelt werden soll
 		} else if (nr >= 10 && nr <= 35 ) {
+			// Der Character ret ist der Ascii wert nr + 55
 			ret = (char)(nr + 55);
 		}
 		return ret;

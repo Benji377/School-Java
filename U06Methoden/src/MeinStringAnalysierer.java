@@ -8,13 +8,19 @@ public class MeinStringAnalysierer {
 	 */
 	public static boolean hatNurZiffern (String s) {
 		boolean ret = false;
+		// Zählt die Anzahl an Ziffern
 		int counter = 0;
+		// Wenn der übergebene String nicht null und nicht leer ist
 		if (s != null && s.length() > 0) {
+			// Geht alle Character einzeln durch
 			for (int i = 0; i < s.length(); i++) {
+				// Wenn der Character eine Ziffer ist, wird der Counter um eins erhöht
 				if (Character.isDigit(s.charAt(i))) {
 					counter++;
 				}
 			}
+			// Wenn die länge des Strings mit dem Counter übereinstimmt
+			// bedeutet das, dass der String nur aus Ziffern besteht
 			if (counter == s.length()) {
 				ret = true;
 			}
@@ -31,8 +37,12 @@ public class MeinStringAnalysierer {
 	 */
 	public static String umdrehenString (String s) {
 		String ret = "";
+		// Wenn der übergebene String nicht null ist
 		if (s != null) {
+			// Schleife geht jeden Character im String durch,
+			// fängt aber von hinten an
 			for (int i = s.length() - 1; i >= 0; i--) {
+				// Jeder Character wird dem leeren String dazugegeben
 				ret += s.charAt(i);
 			}
 		} else {
@@ -51,7 +61,10 @@ public class MeinStringAnalysierer {
 	 */
 	public static String loeschenLeerzeichen (String s) {
 		String ret = "";
+		// Wenn der übergebene String nicht null ist
 		if (s != null) {
+			// Alle leerzeichen im übergebenen String werden somit gelöscht,
+			// beziehungsweise mit "" ersetzt
 			ret = s.replaceAll("\\s+", "");
 		} else {
 			ret = null;
@@ -74,9 +87,14 @@ public class MeinStringAnalysierer {
 	 */
 	public static boolean istPalindrom (String s) {
 		boolean ret = false;
+		// Wenn der übergebene String nicht null und nicht leer ist
 		if (s != null && !s.isEmpty()) {
+			// Somit werden alle Leerzeichen vom String gelöscht
 			s = loeschenLeerzeichen(s);
+			// Somit wird der String umgedreht und in Kleinbuchstaben gestellt
 			String checker = umdrehenString(s.toLowerCase());
+			// Wenn der umgedrehte String gleich dem übergebenenen String ist,
+			// ist es ein Palindrom
 			if (checker.equals(s.toLowerCase())) {
 				ret = true;
 			}
@@ -100,10 +118,16 @@ public class MeinStringAnalysierer {
 	 */
 	public static String links (int zahl, int anzahl) {
 		String ret = "";
+		// Die übergebene Zahl wird gleich dem String hinzugehängt
 		ret += zahl;
+		// Wenn die Länge des Strings immer noch kleiner ist als die Anzahl
+		// an verlangten Zeichen 
 		if (ret.length() < anzahl) {
+			// Die Länge des Strings wird von der gesamten Zeichenanzahl subtrahiert
 			anzahl -= ret.length();
+			// Schleife die von 0 bis zu anzahl geht
 			for (int i = 0; i < anzahl; i++) {
+				// Bei jedem Schleifendurchgang wird dem String ein Leerzeichen hinzugehängt
 				ret += " ";
 			}
 		}
@@ -126,13 +150,19 @@ public class MeinStringAnalysierer {
 	public static String rechts (int zahl, int anzahl) {
 		String ret = "";
 		String check = "";
+		//Die Zahl wird dem String check hinzugefügt
 		check += zahl;
+		// Wenn die Länge des Strings kleiner ist als die übergebene anzahl
 		if (check.length() < anzahl) {
+			// anzahl wird dann von der Stringlänge subtrahiert
 			anzahl -= check.length();
+			// Schleife geht dann von 0 bis anzahl
 			for (int i = 0; i < anzahl; i++) {
+				// Bei jedem Schleifendurchgang wird dem String ret ein Leerzeichen hinzugefügt
 				ret += " ";
 			}
 		}
+		// Erst vor der Ausgabe wird die Zahl hinzugefügt, nach alle Leerzeichen
 		ret += zahl;
 		return ret;
 	}
@@ -147,15 +177,18 @@ public class MeinStringAnalysierer {
 	 * s zu finden sind 
 	 */
 	public static int zaehleBuchstaben (String s) {
-		int ret = 0;
+		int ret = -1;
+		// Wenn der übergebene String nicht null ist
 		if (s != null) {
+			ret = 0;
+			// Schleife geht alle Zeichen im String s durch
 			for (int i = 0; i < s.length(); i++) {
+				// Wenn der Character an Position i ein Buchstabe ist und kein Umlaut
 				if (Character.isLetter(s.charAt(i)) && s.charAt(i) != 'ä' && s.charAt(i) != 'ö' && s.charAt(i) != 'ü') {
+					// ret wird um eins erhöht
 					ret++;
 				}
 			}
-		} else {
-			ret = -1;
 		}
 		return ret;
 	}
@@ -171,11 +204,11 @@ public class MeinStringAnalysierer {
 	 * die nicht Buchstaben sind 
 	 */
 	public static int zaehleNichtBuchstaben (String s) {
-		int ret = 0;
+		int ret = -1;
+		// Wenn der übergebene String nicht null ist
 		if (s != null) {
+			// rest ist gleich die Anzahl an Buchstaben subtrahiert von der Länge des Strings s
 			ret = s.length() - zaehleBuchstaben(s);
-		} else {
-			ret = -1;
 		}
 		return ret;
 	}
@@ -191,16 +224,20 @@ public class MeinStringAnalysierer {
 	 * das Zeichen c im String s vorkommt
 	 */
 	public static int zaehleZeichen (String s, char c) {
-		int ret = 0;
+		int ret = -1;
+		// Wenn der übergebene String nicht null ist
 		if (s != null) {
+			ret = 0;
+			// String s wird zu Kleinbuchstaben umgewandelt
 			s = s.toLowerCase();
+			// Geht alle Character im String s durch
 			for (int i = 0; i < s.length(); i++) {
+				// Wenn der Character an Index i gelich dem übergebenen Zeichen c ist
 				if (s.charAt(i) == Character.toLowerCase(c)) {
+					// ret wird um eins erhöht
 					ret++;
 				}
 			}
-		} else {
-			ret = -1;
 		}
 		return ret;
 	}
@@ -216,13 +253,16 @@ public class MeinStringAnalysierer {
 	 * enthält
 	 */
 	public static String loescheZeichenAnPosition (String s, int p) {
-		String ret = "";
+		String ret = null;
 		String control = "";
+		// Wenn der übergebene String s nicht null ist, p größer als 0 und kleiner als
+		// die Länge des String s ist
 		if (s != null && p >= 0 && p < s.length()) {
+			// Dem String control wird der Character am Index p im Strings übergeben
 			control += s.charAt(p);
+			// Dem String ret wird der String s übergeben, wobei aber der Character im String control
+			// im String s mit "" ausgetauscht werden
 			ret = s.replace(control, "");
-		} else {
-			ret = null;
 		}
 		return ret;
 	}
@@ -236,18 +276,24 @@ public class MeinStringAnalysierer {
 	 * @return der String, der keine Zeichen c mehr enthält
 	 */
 	public static String loescheZeichen (String s, char c) {
-		String ret = "";
+		String ret = null;
 		String control = "";
+		// Wenn der String nicht null ist
 		if (s != null) {
+			// Dem String control wird das zeichen c hinzugehängt
 			control += c;
+			// Schleife geht jedes Zeichen im String s durch
 			for (int i = 0; i < s.length(); i++) {
+				// Wenn Character an Index i im String s gleich dem übergebenen Character c
+				// ist
 				if (s.charAt(i) == c) {
+					// Der Character c, der im String control steht, wird im String s
+					// mit "" ausgetauscht
 					s = s.replace(control, "");
 				}
 			}
+			// dem String ret wird dem neuen String s übergeben
 			ret = s;
-		} else {
-			ret = null;
 		}
 		return ret;
 	}
@@ -267,13 +313,17 @@ public class MeinStringAnalysierer {
 	 * @return der String, in dem mehrer Zeichen gelöscht wurden
 	 */
 	public static String loescheStringAnPosition (String s, int start, int l) {
-		String ret = "";
+		String ret = null;
 		String repl = "";
+		// Wenn String s nicht null, start größer als 0, l kleiner als die Länge des String s,
+		// der String s nicht leer ist, l größer als 0 und start größer las die Länge des String s ist
 		if (s != null && start > 0 && l < s.length() && s.length() >= 0 && l > 0 && start < s.length()) {
+			// Dem String repl wird einem Teil vom String s übergebene
+			// Der Teil startet beim Index start und endet am Index start+l
 			repl = s.substring(start, start+l);
+			// Dem String ret wird der String s übergeben, ohne den davor dem String repl
+			// übergebenen Teil
 			ret = s.replace(repl, "");
-		} else {
-			ret = null;
 		}
 		return ret;
 	}
@@ -292,13 +342,17 @@ public class MeinStringAnalysierer {
 	 */
 	public static String loescheString (String s, String ls) {
 		String ret = "";
+		// Wenn der übergebene String s nicht null, String ls nicht null,
+		// String s nicht leer und String ls nicht leer ist
 		if (s != null && ls != null && !s.isEmpty() && !ls.isEmpty()) {
+			// Dem String ret wird dem String s übergeben, wobei aber
+			// der String ls im String s mit "" ausgetausch wurde
 			ret = s.replace(ls, "");
+			// Wenn der String ls den String s komplett löscht
 			if (ret.isEmpty()) {
+				// ret wird auf null gesetzt
 				ret = null;
 			}
-		} else {
-			ret = null;
 		}
 		return ret;
 	}
