@@ -22,7 +22,7 @@ public class JumpingBalls extends Applet
 	/**
 	 * Statische Konstante, welche sich die Anzahl der zu bewegenden Bälle merkt
 	 */
-	private static	final int ANZAHL_BAELLE = 10;
+	private static	final int ANZAHL_BAELLE = 10; 
 
 	/**
 	 * Diese Methode wird immer dann aufgerufen, wenn der Inhalt des Applets neu 

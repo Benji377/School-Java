@@ -1,6 +1,6 @@
 
 public class Quadrat {
-	// Ein Quadrat kann definiert werden in dem mna eine einzige Seite angibt
+	// Ein Quadrat kann definiert werden in dem man eine einzige Seite angibt
 	private double seiteA;
 	
 	/**

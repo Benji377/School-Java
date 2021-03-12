@@ -1,3 +1,5 @@
+// Programm für das Video!
+// Bereits besprochen
 
 public class Einrichtung {
 	

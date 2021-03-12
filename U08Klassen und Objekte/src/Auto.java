@@ -1,3 +1,5 @@
+// Programm für das Video!
+// Wurde bereits diskutiert
 
 public class Auto {
 	int anzahlReifen;

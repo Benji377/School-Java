@@ -10,7 +10,7 @@ public class StoppuhrTest
 		Stoppuhr uhr = new Stoppuhr();
 		// Setzen des Pfades und des Dateinamens jener Datei, in welche die Stoppzeiten
 		// geschrieben werden sollen
-		uhr.setDateiname("H:\\Eigene Dateien\\Eclipse\\EclipseWork\\zeiten.csv");
+		uhr.setDateiname("D:\\Eclipse TFO\\Workspace\\U08Klassen und Objekte\\zeiten\\zeiten.csv");
 		// Fünfmal wir die Stoppuhr gestartet und gestoppt und dabei die Zeit gemessen
 		for (int i = 0; i < 5; i++) {
 			// Starten der Stoppuhr
