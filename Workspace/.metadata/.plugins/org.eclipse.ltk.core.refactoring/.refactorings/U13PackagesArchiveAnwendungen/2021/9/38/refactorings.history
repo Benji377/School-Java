@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;FELDGROESSE&apos; in &apos;net.tfobz.tictactoesingle.TicTacToeSingle&apos; to &apos;feldgroesse&apos;&#x0A;- Original project: &apos;U13PackagesArchiveAnwendungen&apos;&#x0A;- Original element: &apos;net.tfobz.tictactoesingle.TicTacToeSingle.FELDGROESSE&apos;&#x0A;- Renamed element: &apos;net.tfobz.tictactoesingle.TicTacToeSingle.feldgroesse&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;FELDGROESSE&apos;" flags="589830" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src&lt;net.tfobz.tictactoesingle{TicTacToeSingle.java[TicTacToeSingle^FELDGROESSE" name="feldgroesse" references="true" setter="false" stamp="1631453985335" textual="false" version="1.0"/>
+</session>

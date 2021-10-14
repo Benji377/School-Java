@@ -1,0 +1,43 @@
+package net.tfobz.webbrowser;
+
+import java.awt.*;
+import javax.swing.*;
+
+public class MeinWeb extends JFrame {
+	final int screen_height = 400;
+	final int screen_width = 400;
+	private JLabel adresse_label = null;
+	private JTextField input_field = null;
+	private JButton confirm_button = null;
+	
+	public static void main(String[] args) {
+		MeinWeb web = new MeinWeb();
+		web.setVisible(true);
+	}
+	
+	public MeinWeb() {
+		Dimension screen_size = Toolkit.getDefaultToolkit().getScreenSize();
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setBounds((int)screen_size.getWidth()/2-screen_width/2, (int)screen_size.getHeight()/2-screen_height/2, screen_width, screen_height);
+		this.setResizable(false);
+		this.setTitle("MeinWeb");
+		
+		adresse_label = new JLabel();
+		adresse_label.setBounds(5, 10, 70, 30);
+		adresse_label.setText("Adresse:");
+		
+		input_field = new JTextField();
+		input_field.setBounds(70, 10, screen_width-120, 30);
+		
+		confirm_button = new JButton();
+		confirm_button.setBounds(screen_width-53, 10, 30, 30);
+		confirm_button.setText("->");
+		
+		Container container = this.getContentPane();
+		container.setLayout(null);
+		container.add(adresse_label);
+		container.add(input_field);
+		container.add(confirm_button);
+	}
+
+}

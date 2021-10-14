@@ -1,0 +1,76 @@
+package net.tfobz.webbrowser;
+
+import java.awt.*;
+import java.awt.event.*;
+import java.io.IOException;
+
+import javax.swing.*;
+
+public class MeinWeb extends JFrame {
+	final int screen_height = 1000;
+	final int screen_width = 1000;
+	private JLabel adresse_label = null;
+	private JTextField input_field = null;
+	private JButton confirm_button = null;
+	private JEditorPane web_view = null;
+	private JScrollPane scroller = null;
+	
+	public static void main(String[] args) {
+		MeinWeb web = new MeinWeb();
+		web.setVisible(true);
+	}
+	
+	public MeinWeb() {
+		Dimension screen_size = Toolkit.getDefaultToolkit().getScreenSize();
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setBounds((int)screen_size.getWidth()/2-screen_width/2, (int)screen_size.getHeight()/2-screen_height/2, screen_width, screen_height);
+		this.setResizable(false);
+		this.setTitle("MeinWeb");
+		
+		this.adresse_label = new JLabel();
+		this.adresse_label.setBounds(5, 10, 70, 30);
+		this.adresse_label.setText("Adresse:");
+		
+		this.input_field = new JTextField();
+		this.input_field.setBounds(70, 10, screen_width-120, 30);
+		
+		this.confirm_button = new JButton();
+		this.confirm_button.setBounds(screen_width-53, 10, 50, 30);
+		this.confirm_button.setText("->");
+		this.confirm_button.addActionListener(
+				new ActionListener() {
+					public void actionPerformed(ActionEvent e) {
+						String url = input_field.getText();
+						try {
+							web_view.setPage(url);
+						} catch (IOException e1) {
+							e1.printStackTrace();
+							JOptionPane.showMessageDialog(
+									MeinWeb.this,
+									"URL ist falsch",
+									"Fehler",
+									JOptionPane.ERROR_MESSAGE);
+						}
+					}
+				});
+		this.getRootPane().setDefaultButton(confirm_button);
+		
+		this.web_view = new JEditorPane();
+		this.web_view.setBounds(10, 55, screen_width-20, screen_height-90);
+		
+		this.scroller = new JScrollPane();
+		this.scroller.setBounds(0, 45, screen_width, screen_height-78);
+		this.scroller.add(web_view);
+		this.scroller.setViewportView(web_view);
+		
+		
+		
+		Container container = this.getContentPane();
+		container.setLayout(null);
+		container.add(adresse_label);
+		container.add(input_field);
+		container.add(confirm_button);
+		container.add(scroller);
+	}
+
+}

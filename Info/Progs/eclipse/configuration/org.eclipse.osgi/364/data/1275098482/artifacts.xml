@@ -1,0 +1,2949 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<repository name='D:\Coding\Eclipse TFO\Info\Progs\eclipse\.eclipseextension' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1.0.0'>
+  <properties size='3'>
+    <property name='p2.timestamp' value='1630170565946'/>
+    <property name='org.eclipse.update.site.policy' value='USER-EXCLUDE'/>
+    <property name='org.eclipse.update.site.list' value=''/>
+  </properties>
+  <mappings size='3'>
+    <rule filter='(&amp; (classifier=osgi.bundle))' output='${repoUrl}/plugins/${id}_${version}.jar'/>
+    <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
+  </mappings>
+  <artifacts size='296'>
+    <artifact classifier='osgi.bundle' id='org.eclipse.help.base' version='4.2.153.v20180330-0640'>
+      <properties size='2'>
+        <property name='artifact.size' value='426017'/>
+        <property name='download.size' value='426017'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.help.base_4.2.153.v20180330-0640.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.help.base_4.2.153.v20180330-0640.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='ch.qos.logback.classic' version='1.1.2.v20160208-0839'>
+      <properties size='2'>
+        <property name='artifact.size' value='293989'/>
+        <property name='download.size' value='293989'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/ch.qos.logback.classic_1.1.2.v20160208-0839.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\ch.qos.logback.classic_1.1.2.v20160208-0839.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jdt.junit.core' version='3.9.100.v20180321-0831'>
+      <properties size='2'>
+        <property name='artifact.size' value='173369'/>
+        <property name='download.size' value='173369'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jdt.junit.core_3.9.100.v20180321-0831.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jdt.junit.core_3.9.100.v20180321-0831.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.php.refactoring.ui' version='5.3.0.201803070838'>
+      <properties size='2'>
+        <property name='artifact.size' value='241929'/>
+        <property name='download.size' value='241929'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.php.refactoring.ui_5.3.0.201803070838.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.php.refactoring.ui_5.3.0.201803070838.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.jpt.jaxb.eclipselink.feature' version='1.4.201.v201803161350'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.jpt.jaxb.eclipselink.feature_1.4.201.v201803161350/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.jpt.jaxb.eclipselink.feature_1.4.201.v201803161350'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.maven.indexer' version='1.8.3.20180227-2135'>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.m2e.maven.indexer_1.8.3.20180227-2135/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.m2e.maven.indexer_1.8.3.20180227-2135'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.wst.xml_core.feature' version='3.9.2.v201711080222'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.wst.xml_core.feature_3.9.2.v201711080222/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.wst.xml_core.feature_3.9.2.v201711080222'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.simpleconfigurator' version='1.2.1.v20180131-1435'>
+      <properties size='2'>
+        <property name='artifact.size' value='46392'/>
+        <property name='download.size' value='46392'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.equinox.simpleconfigurator_1.2.1.v20180131-1435.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.equinox.simpleconfigurator_1.2.1.v20180131-1435.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.objectweb.asm.tree' version='6.0.0.v20180116-1719'>
+      <properties size='2'>
+        <property name='artifact.size' value='68993'/>
+        <property name='download.size' value='68993'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.objectweb.asm.tree_6.0.0.v20180116-1719.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.objectweb.asm.tree_6.0.0.v20180116-1719.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.php.composer' version='5.3.0.201803070838'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.php.composer_5.3.0.201803070838/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.php.composer_5.3.0.201803070838'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.jst.enterprise_ui.feature' version='3.9.3.v201803221418'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.jst.enterprise_ui.feature_3.9.3.v201803221418/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.jst.enterprise_ui.feature_3.9.3.v201803221418'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.profiles.core' version='1.8.3.20180227-2137'>
+      <properties size='2'>
+        <property name='artifact.size' value='21225'/>
+        <property name='download.size' value='21225'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.m2e.profiles.core_1.8.3.20180227-2137.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.m2e.profiles.core_1.8.3.20180227-2137.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.jpt.dbws.eclipselink.feature' version='1.2.201.v201803161350'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.jpt.dbws.eclipselink.feature_1.2.201.v201803161350/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.jpt.dbws.eclipselink.feature_1.2.201.v201803161350'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jetty.webapp' version='9.4.8.v20171121'>
+      <properties size='2'>
+        <property name='artifact.size' value='137981'/>
+        <property name='download.size' value='137981'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jetty.webapp_9.4.8.v20171121.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jetty.webapp_9.4.8.v20171121.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jpt.dbws.eclipselink.core.gen' version='1.1.201.v201803012210'>
+      <properties size='2'>
+        <property name='artifact.size' value='19335'/>
+        <property name='download.size' value='19335'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jpt.dbws.eclipselink.core.gen_1.1.201.v201803012210.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jpt.dbws.eclipselink.core.gen_1.1.201.v201803012210.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.php.refactoring.core' version='5.3.0.201803070838'>
+      <properties size='2'>
+        <property name='artifact.size' value='271283'/>
+        <property name='download.size' value='271283'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.php.refactoring.core_5.3.0.201803070838.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.php.refactoring.core_5.3.0.201803070838.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.recommenders.models' version='2.5.2.v20180401-1226'>
+      <properties size='2'>
+        <property name='artifact.size' value='63668'/>
+        <property name='download.size' value='63668'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.recommenders.models_2.5.2.v20180401-1226.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.recommenders.models_2.5.2.v20180401-1226.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jst.jsf.doc.user' version='1.5.0.v201712131442'>
+      <properties size='2'>
+        <property name='artifact.size' value='2758103'/>
+        <property name='download.size' value='2758103'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jst.jsf.doc.user_1.5.0.v201712131442.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jst.jsf.doc.user_1.5.0.v201712131442.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.recommenders.constructors' version='2.5.2.v20180401-1226'>
+      <properties size='2'>
+        <property name='artifact.size' value='13573'/>
+        <property name='download.size' value='13573'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.recommenders.constructors_2.5.2.v20180401-1226.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.recommenders.constructors_2.5.2.v20180401-1226.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.pde.launching' version='3.7.52.v20171222-1119'>
+      <properties size='2'>
+        <property name='artifact.size' value='126239'/>
+        <property name='download.size' value='126239'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.pde.launching_3.7.52.v20171222-1119.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.pde.launching_3.7.52.v20171222-1119.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.recommenders.net' version='2.5.2.v20180401-1226'>
+      <properties size='2'>
+        <property name='artifact.size' value='12417'/>
+        <property name='download.size' value='12417'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.recommenders.net_2.5.2.v20180401-1226.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.recommenders.net_2.5.2.v20180401-1226.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ptp.remote.server.core' version='3.0.0.201802282054'>
+      <properties size='2'>
+        <property name='artifact.size' value='34878'/>
+        <property name='download.size' value='34878'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.ptp.remote.server.core_3.0.0.201802282054.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.ptp.remote.server.core_3.0.0.201802282054.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jdt' version='3.13.4.v20180330-0640'>
+      <properties size='2'>
+        <property name='artifact.size' value='45205'/>
+        <property name='download.size' value='45205'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jdt_3.13.4.v20180330-0640.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jdt_3.13.4.v20180330-0640.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.epp.logging.aeri.core' version='2.0.7.v20170906-1327'>
+      <properties size='2'>
+        <property name='artifact.size' value='174953'/>
+        <property name='download.size' value='174953'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.epp.logging.aeri.core_2.0.7.v20170906-1327.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.epp.logging.aeri.core_2.0.7.v20170906-1327.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.wst.ws_ui.feature' version='3.8.1.v201803221834'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.wst.ws_ui.feature_3.8.1.v201803221834/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.wst.ws_ui.feature_3.8.1.v201803221834'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.php.server.ui' version='5.3.0.201803070838'>
+      <properties size='2'>
+        <property name='artifact.size' value='146617'/>
+        <property name='download.size' value='146617'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.php.server.ui_5.3.0.201803070838.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.php.server.ui_5.3.0.201803070838.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.recommenders.models.rcp' version='2.5.2.v20180401-1226'>
+      <properties size='2'>
+        <property name='artifact.size' value='138759'/>
+        <property name='download.size' value='138759'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.recommenders.models.rcp_2.5.2.v20180401-1226.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.recommenders.models.rcp_2.5.2.v20180401-1226.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.wst.jsdt.core' version='2.0.301.v201710051729'>
+      <properties size='2'>
+        <property name='artifact.size' value='3826573'/>
+        <property name='download.size' value='3826573'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.wst.jsdt.core_2.0.301.v201710051729.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.wst.jsdt.core_2.0.301.v201710051729.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ptp.rdt.sync.core' version='6.0.0.201802282054'>
+      <properties size='2'>
+        <property name='artifact.size' value='64728'/>
+        <property name='download.size' value='64728'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.ptp.rdt.sync.core_6.0.0.201802282054.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.ptp.rdt.sync.core_6.0.0.201802282054.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.epp.package.common' version='4.7.3.20180405-1200'>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.epp.package.common_4.7.3.20180405-1200/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.epp.package.common_4.7.3.20180405-1200'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jst.pagedesigner.jsf.ui' version='1.5.2.v201803271721'>
+      <properties size='2'>
+        <property name='artifact.size' value='307096'/>
+        <property name='download.size' value='307096'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jst.pagedesigner.jsf.ui_1.5.2.v201803271721.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jst.pagedesigner.jsf.ui_1.5.2.v201803271721.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.recommenders.subwords.rcp' version='2.5.2.v20180401-1226'>
+      <properties size='2'>
+        <property name='artifact.size' value='34025'/>
+        <property name='download.size' value='34025'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.recommenders.subwords.rcp_2.5.2.v20180401-1226.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.recommenders.subwords.rcp_2.5.2.v20180401-1226.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.platform.doc.user' version='4.7.3.v20180328-1557'>
+      <properties size='2'>
+        <property name='artifact.size' value='9673597'/>
+        <property name='download.size' value='9673597'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.platform.doc.user_4.7.3.v20180328-1557.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.platform.doc.user_4.7.3.v20180328-1557.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.php.profile.ui' version='5.3.0.201803070838'>
+      <properties size='2'>
+        <property name='artifact.size' value='336427'/>
+        <property name='download.size' value='336427'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.php.profile.ui_5.3.0.201803070838.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.php.profile.ui_5.3.0.201803070838.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.google.inject' version='3.0.0.v201605172100'>
+      <properties size='2'>
+        <property name='artifact.size' value='531525'/>
+        <property name='download.size' value='531525'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/com.google.inject_3.0.0.v201605172100.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\com.google.inject_3.0.0.v201605172100.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.buildship.ui' version='2.2.1.v20180125-1441'>
+      <properties size='2'>
+        <property name='artifact.size' value='664531'/>
+        <property name='download.size' value='664531'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.buildship.ui_2.2.1.v20180125-1441.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.buildship.ui_2.2.1.v20180125-1441.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.cdt.core.win32' version='5.4.1.201802261533'>
+      <properties size='2'>
+        <property name='artifact.size' value='13365'/>
+        <property name='download.size' value='13365'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.cdt.core.win32_5.4.1.201802261533.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.cdt.core.win32_5.4.1.201802261533.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jetty.servlet' version='9.4.8.v20171121'>
+      <properties size='2'>
+        <property name='artifact.size' value='119516'/>
+        <property name='download.size' value='119516'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jetty.servlet_9.4.8.v20171121.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jetty.servlet_9.4.8.v20171121.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.help' version='2.2.104.v20180330-0640'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.help_2.2.104.v20180330-0640/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.help_2.2.104.v20180330-0640'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jpt.jpa.gen' version='2.3.201.v201803012210'>
+      <properties size='2'>
+        <property name='artifact.size' value='97318'/>
+        <property name='download.size' value='97318'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jpt.jpa.gen_2.3.201.v201803012210.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jpt.jpa.gen_2.3.201.v201803012210.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.php.ui' version='5.3.0.201803070838'>
+      <properties size='2'>
+        <property name='artifact.size' value='2993767'/>
+        <property name='download.size' value='2993767'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.php.ui_5.3.0.201803070838.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.php.ui_5.3.0.201803070838.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jetty.security' version='9.4.8.v20171121'>
+      <properties size='2'>
+        <property name='artifact.size' value='102683'/>
+        <property name='download.size' value='102683'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jetty.security_9.4.8.v20171121.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jetty.security_9.4.8.v20171121.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.wst.jsdt.doc' version='2.0.200.v201710302345'>
+      <properties size='2'>
+        <property name='artifact.size' value='8855376'/>
+        <property name='download.size' value='8855376'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.wst.jsdt.doc_2.0.200.v201710302345.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.wst.jsdt.doc_2.0.200.v201710302345.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.m2e.feature' version='1.8.3.20180227-2137'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.m2e.feature_1.8.3.20180227-2137/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.m2e.feature_1.8.3.20180227-2137'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.wst.jsdt.nodejs.feature' version='1.1.0.v201803202007'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.wst.jsdt.nodejs.feature_1.1.0.v201803202007/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.wst.jsdt.nodejs.feature_1.1.0.v201803202007'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jst.jsf.common.runtime' version='1.4.1.v201803271721'>
+      <properties size='2'>
+        <property name='artifact.size' value='87446'/>
+        <property name='download.size' value='87446'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jst.jsf.common.runtime_1.4.1.v201803271721.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jst.jsf.common.runtime_1.4.1.v201803271721.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jst.j2ee' version='1.2.201.v201801172042'>
+      <properties size='2'>
+        <property name='artifact.size' value='1890234'/>
+        <property name='download.size' value='1890234'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jst.j2ee_1.2.201.v201801172042.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jst.j2ee_1.2.201.v201801172042.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jpt.common.ui' version='1.4.201.v201803012210'>
+      <properties size='2'>
+        <property name='artifact.size' value='459891'/>
+        <property name='download.size' value='459891'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jpt.common.ui_1.4.201.v201803012210.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jpt.common.ui_1.4.201.v201803012210.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jst.jsf.apache.trinidad.tagsupport' version='1.4.1.v201802231403'>
+      <properties size='2'>
+        <property name='artifact.size' value='157307'/>
+        <property name='download.size' value='157307'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jst.jsf.apache.trinidad.tagsupport_1.4.1.v201802231403.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jst.jsf.apache.trinidad.tagsupport_1.4.1.v201802231403.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.persistence.jpa' version='2.7.1.v20171221-bd47e8f'>
+      <properties size='2'>
+        <property name='artifact.size' value='1457061'/>
+        <property name='download.size' value='1457061'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.persistence.jpa_2.7.1.v20171221-bd47e8f.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.persistence.jpa_2.7.1.v20171221-bd47e8f.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.userstorage' version='1.2.0.v20190307-0457'>
+      <properties size='2'>
+        <property name='artifact.size' value='118809'/>
+        <property name='download.size' value='118809'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.userstorage_1.2.0.v20190307-0457.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.userstorage_1.2.0.v20190307-0457.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.epp.mpc.core' version='1.6.4.v20180214-1810'>
+      <properties size='2'>
+        <property name='artifact.size' value='246195'/>
+        <property name='download.size' value='246195'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.epp.mpc.core_1.6.4.v20180214-1810.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.epp.mpc.core_1.6.4.v20180214-1810.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jst.jsp.ui' version='1.1.1201.v201710051737'>
+      <properties size='2'>
+        <property name='artifact.size' value='534737'/>
+        <property name='download.size' value='534737'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jst.jsp.ui_1.1.1201.v201710051737.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jst.jsp.ui_1.1.1201.v201710051737.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.recommenders.calls' version='2.5.2.v20180401-1226'>
+      <properties size='2'>
+        <property name='artifact.size' value='28040'/>
+        <property name='download.size' value='28040'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.recommenders.calls_2.5.2.v20180401-1226.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.recommenders.calls_2.5.2.v20180401-1226.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.recommenders.overrides.rcp' version='2.5.2.v20180401-1226'>
+      <properties size='2'>
+        <property name='artifact.size' value='24822'/>
+        <property name='download.size' value='24822'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.recommenders.overrides.rcp_2.5.2.v20180401-1226.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.recommenders.overrides.rcp_2.5.2.v20180401-1226.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.model.edit' version='1.8.3.20180227-2137'>
+      <properties size='2'>
+        <property name='artifact.size' value='399571'/>
+        <property name='download.size' value='399571'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.m2e.model.edit_1.8.3.20180227-2137.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.m2e.model.edit_1.8.3.20180227-2137.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jdt.annotation' version='2.1.150.v20180322-1206'>
+      <properties size='2'>
+        <property name='artifact.size' value='25831'/>
+        <property name='download.size' value='25831'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jdt.annotation_2.1.150.v20180322-1206.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jdt.annotation_2.1.150.v20180322-1206.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.php.debug.ui' version='5.3.0.201803070838'>
+      <properties size='2'>
+        <property name='artifact.size' value='770000'/>
+        <property name='download.size' value='770000'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.php.debug.ui_5.3.0.201803070838.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.php.debug.ui_5.3.0.201803070838.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.userstorage' version='1.2.0.v20191120-1614'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.userstorage_1.2.0.v20191120-1614/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.userstorage_1.2.0.v20191120-1614'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.editor.xml' version='1.8.3.20180227-2137'>
+      <properties size='2'>
+        <property name='artifact.size' value='278118'/>
+        <property name='download.size' value='278118'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.m2e.editor.xml_1.8.3.20180227-2137.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.m2e.editor.xml_1.8.3.20180227-2137.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.cdt.core' version='6.4.0.201802261533'>
+      <properties size='2'>
+        <property name='artifact.size' value='5814661'/>
+        <property name='download.size' value='5814661'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.cdt.core_6.4.0.201802261533.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.cdt.core_6.4.0.201802261533.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jpt.jpa.db.ui' version='2.1.201.v201803012210'>
+      <properties size='2'>
+        <property name='artifact.size' value='12693'/>
+        <property name='download.size' value='12693'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jpt.jpa.db.ui_2.1.201.v201803012210.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jpt.jpa.db.ui_2.1.201.v201803012210.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jpt.common.eclipselink.branding' version='1.3.101.v201803012210'>
+      <properties size='2'>
+        <property name='artifact.size' value='17454'/>
+        <property name='download.size' value='17454'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jpt.common.eclipselink.branding_1.3.101.v201803012210.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jpt.common.eclipselink.branding_1.3.101.v201803012210.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.recommenders.completion.rcp' version='2.5.2.v20180401-1226'>
+      <properties size='2'>
+        <property name='artifact.size' value='225671'/>
+        <property name='download.size' value='225671'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.recommenders.completion.rcp_2.5.2.v20180401-1226.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.recommenders.completion.rcp_2.5.2.v20180401-1226.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.jpt.common.eclipselink.feature' version='1.3.200.v201803012210'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.jpt.common.eclipselink.feature_1.3.200.v201803012210/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.jpt.common.eclipselink.feature_1.3.200.v201803012210'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.recommenders.types.rcp' version='2.5.2.v20180401-1226'>
+      <properties size='2'>
+        <property name='artifact.size' value='42807'/>
+        <property name='download.size' value='42807'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.recommenders.types.rcp_2.5.2.v20180401-1226.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.recommenders.types.rcp_2.5.2.v20180401-1226.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jst.ws.consumption' version='1.0.1001.v201803211723'>
+      <properties size='2'>
+        <property name='artifact.size' value='258013'/>
+        <property name='download.size' value='258013'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jst.ws.consumption_1.0.1001.v201803211723.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jst.ws.consumption_1.0.1001.v201803211723.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.rcp' version='4.7.3.v20180330-0640'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.rcp_4.7.3.v20180330-0640/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.rcp_4.7.3.v20180330-0640'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jdt.core.manipulation' version='1.9.100.v20180321-0831'>
+      <properties size='2'>
+        <property name='artifact.size' value='287052'/>
+        <property name='download.size' value='287052'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jdt.core.manipulation_1.9.100.v20180321-0831.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jdt.core.manipulation_1.9.100.v20180321-0831.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.remote.serial.core' version='1.0.0.201803060126'>
+      <properties size='2'>
+        <property name='artifact.size' value='60591'/>
+        <property name='download.size' value='60591'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.remote.serial.core_1.0.0.201803060126.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.remote.serial.core_1.0.0.201803060126.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.eclemma.core' version='3.1.0.201804041601'>
+      <properties size='2'>
+        <property name='artifact.size' value='100230'/>
+        <property name='download.size' value='100230'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.eclemma.core_3.1.0.201804041601.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.eclemma.core_3.1.0.201804041601.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.gradleware.tooling.model' version='0.19.4.v20171108133209'>
+      <properties size='2'>
+        <property name='artifact.size' value='143591'/>
+        <property name='download.size' value='143591'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/com.gradleware.tooling.model_0.19.4.v20171108133209.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\com.gradleware.tooling.model_0.19.4.v20171108133209.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.maven.runtime' version='1.8.3.20180227-2135'>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.m2e.maven.runtime_1.8.3.20180227-2135/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.m2e.maven.runtime_1.8.3.20180227-2135'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.persistence.antlr' version='3.5.2.v201605171345'>
+      <properties size='2'>
+        <property name='artifact.size' value='207925'/>
+        <property name='download.size' value='207925'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.persistence.antlr_3.5.2.v201605171345.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.persistence.antlr_3.5.2.v201605171345.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.php.mylyn.ui' version='5.3.0.201803070838'>
+      <properties size='2'>
+        <property name='artifact.size' value='26729'/>
+        <property name='download.size' value='26729'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.php.mylyn.ui_5.3.0.201803070838.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.php.mylyn.ui_5.3.0.201803070838.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.launching' version='1.8.3.20180227-2137'>
+      <properties size='2'>
+        <property name='artifact.size' value='105958'/>
+        <property name='download.size' value='105958'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.m2e.launching_1.8.3.20180227-2137.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.m2e.launching_1.8.3.20180227-2137.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.remote.jsch.core' version='1.0.0.201803060126'>
+      <properties size='2'>
+        <property name='artifact.size' value='94102'/>
+        <property name='download.size' value='94102'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.remote.jsch.core_1.0.0.201803060126.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.remote.jsch.core_1.0.0.201803060126.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.jpt.common.feature' version='1.5.100.v201803012210'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.jpt.common.feature_1.5.100.v201803012210/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.jpt.common.feature_1.5.100.v201803012210'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.epp.package.jee' version='4.7.3.20180405-1200'>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.epp.package.jee_4.7.3.20180405-1200/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.epp.package.jee_4.7.3.20180405-1200'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.pde.core' version='3.11.101.v20171228-1230'>
+      <properties size='2'>
+        <property name='artifact.size' value='1325786'/>
+        <property name='download.size' value='1325786'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.pde.core_3.11.101.v20171228-1230.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.pde.core_3.11.101.v20171228-1230.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.rcp' version='4.7.3.v20180330-0640'>
+      <properties size='2'>
+        <property name='artifact.size' value='11318'/>
+        <property name='download.size' value='11318'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.rcp_4.7.3.v20180330-0640.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.rcp_4.7.3.v20180330-0640.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.pde' version='3.13.4.v20180330-0640'>
+      <properties size='2'>
+        <property name='artifact.size' value='71593'/>
+        <property name='download.size' value='71593'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.pde_3.13.4.v20180330-0640.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.pde_3.13.4.v20180330-0640.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.epp.package.jee.feature' version='4.7.3.20180405-1200'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.epp.package.jee.feature_4.7.3.20180405-1200/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.epp.package.jee.feature_4.7.3.20180405-1200'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.persistence.core' version='2.7.1.v20171221-bd47e8f'>
+      <properties size='2'>
+        <property name='artifact.size' value='5314927'/>
+        <property name='download.size' value='5314927'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.persistence.core_2.7.1.v20171221-bd47e8f.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.persistence.core_2.7.1.v20171221-bd47e8f.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.ptp.rdt.sync' version='9.1.4.201802282054'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.ptp.rdt.sync_9.1.4.201802282054/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.ptp.rdt.sync_9.1.4.201802282054'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.wst.xml_ui.feature' version='3.9.2.v201803221834'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.wst.xml_ui.feature_3.9.2.v201803221834/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.wst.xml_ui.feature_3.9.2.v201803221834'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jdt.junit' version='3.10.75.v20180322-1731'>
+      <properties size='2'>
+        <property name='artifact.size' value='564340'/>
+        <property name='download.size' value='564340'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jdt.junit_3.10.75.v20180322-1731.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jdt.junit_3.10.75.v20180322-1731.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.jdt.ui' version='1.8.3.20180227-2137'>
+      <properties size='2'>
+        <property name='artifact.size' value='30518'/>
+        <property name='download.size' value='30518'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.m2e.jdt.ui_1.8.3.20180227-2137.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.m2e.jdt.ui_1.8.3.20180227-2137.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ptp.rdt.sync.ui' version='2.0.0.201802282054'>
+      <properties size='2'>
+        <property name='artifact.size' value='171028'/>
+        <property name='download.size' value='171028'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.ptp.rdt.sync.ui_2.0.0.201802282054.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.ptp.rdt.sync.ui_2.0.0.201802282054.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jpt.jaxb.core.schemagen' version='1.1.201.v201803012210'>
+      <properties size='2'>
+        <property name='artifact.size' value='20113'/>
+        <property name='download.size' value='20113'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jpt.jaxb.core.schemagen_1.1.201.v201803012210.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jpt.jaxb.core.schemagen_1.1.201.v201803012210.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.persistence.moxy' version='2.7.1.v20171221-bd47e8f'>
+      <properties size='2'>
+        <property name='artifact.size' value='643701'/>
+        <property name='download.size' value='643701'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.persistence.moxy_2.7.1.v20171221-bd47e8f.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.persistence.moxy_2.7.1.v20171221-bd47e8f.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ptp.rdt.sync.git.ui' version='1.0.0.201802282054'>
+      <properties size='2'>
+        <property name='artifact.size' value='35557'/>
+        <property name='download.size' value='35557'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.ptp.rdt.sync.git.ui_1.0.0.201802282054.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.ptp.rdt.sync.git.ui_1.0.0.201802282054.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jetty.continuation' version='9.4.8.v20171121'>
+      <properties size='2'>
+        <property name='artifact.size' value='23364'/>
+        <property name='download.size' value='23364'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jetty.continuation_9.4.8.v20171121.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jetty.continuation_9.4.8.v20171121.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ui.genericeditor' version='1.0.2.v20180126-0718'>
+      <properties size='2'>
+        <property name='artifact.size' value='61370'/>
+        <property name='download.size' value='61370'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.ui.genericeditor_1.0.2.v20180126-0718.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.ui.genericeditor_1.0.2.v20180126-0718.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jst.jsf.standard.tagsupport' version='1.5.1.v201803271721'>
+      <properties size='2'>
+        <property name='artifact.size' value='199704'/>
+        <property name='download.size' value='199704'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jst.jsf.standard.tagsupport_1.5.1.v201803271721.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jst.jsf.standard.tagsupport_1.5.1.v201803271721.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.core.jobs' version='3.9.3.v20180115-1757'>
+      <properties size='2'>
+        <property name='artifact.size' value='107579'/>
+        <property name='download.size' value='107579'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.core.jobs_3.9.3.v20180115-1757.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.core.jobs_3.9.3.v20180115-1757.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jst.pagedesigner.jsp.core' version='1.5.102.v201803271721'>
+      <properties size='2'>
+        <property name='artifact.size' value='34047'/>
+        <property name='download.size' value='34047'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jst.pagedesigner.jsp.core_1.5.102.v201803271721.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jst.pagedesigner.jsp.core_1.5.102.v201803271721.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.m2e.logback.feature' version='1.8.3.20180227-2137'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.m2e.logback.feature_1.8.3.20180227-2137/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.m2e.logback.feature_1.8.3.20180227-2137'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.importer' version='1.8.3.20180227-2137'>
+      <properties size='2'>
+        <property name='artifact.size' value='17887'/>
+        <property name='download.size' value='17887'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.m2e.importer_1.8.3.20180227-2137.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.m2e.importer_1.8.3.20180227-2137.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.buildship.stsmigration' version='2.2.1.v20180125-1441'>
+      <properties size='2'>
+        <property name='artifact.size' value='19967'/>
+        <property name='download.size' value='19967'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.buildship.stsmigration_2.2.1.v20180125-1441.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.buildship.stsmigration_2.2.1.v20180125-1441.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.epp.package.common.feature' version='4.7.3.20180405-1200'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.epp.package.common.feature_4.7.3.20180405-1200/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.epp.package.common.feature_4.7.3.20180405-1200'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jpt.jaxb.eclipselink.core.schemagen' version='1.2.201.v201803012210'>
+      <properties size='2'>
+        <property name='artifact.size' value='20978'/>
+        <property name='download.size' value='20978'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jpt.jaxb.eclipselink.core.schemagen_1.2.201.v201803012210.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jpt.jaxb.eclipselink.core.schemagen_1.2.201.v201803012210.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.php.composer.ui' version='5.3.0.201803070838'>
+      <properties size='2'>
+        <property name='artifact.size' value='615368'/>
+        <property name='download.size' value='615368'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.php.composer.ui_5.3.0.201803070838.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.php.composer.ui_5.3.0.201803070838.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.php.debug.daemon' version='5.3.0.201803070838'>
+      <properties size='2'>
+        <property name='artifact.size' value='21637'/>
+        <property name='download.size' value='21637'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.php.debug.daemon_5.3.0.201803070838.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.php.debug.daemon_5.3.0.201803070838.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.php.formatter.ui' version='5.3.0.201803070838'>
+      <properties size='2'>
+        <property name='artifact.size' value='193599'/>
+        <property name='download.size' value='193599'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.php.formatter.ui_5.3.0.201803070838.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.php.formatter.ui_5.3.0.201803070838.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jpt.jpa.ui' version='3.4.201.v201803012210'>
+      <properties size='2'>
+        <property name='artifact.size' value='2211194'/>
+        <property name='download.size' value='2211194'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jpt.jpa.ui_3.4.201.v201803012210.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jpt.jpa.ui_3.4.201.v201803012210.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.jst.jsf.apache.trinidad.tagsupport.feature' version='2.6.1.v201802231403'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.jst.jsf.apache.trinidad.tagsupport.feature_2.6.1.v201802231403/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.jst.jsf.apache.trinidad.tagsupport.feature_2.6.1.v201802231403'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.php.core' version='5.3.0.201803070838'>
+      <properties size='2'>
+        <property name='artifact.size' value='7114371'/>
+        <property name='download.size' value='7114371'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.php.core_5.3.0.201803070838.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.php.core_5.3.0.201803070838.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jetty.server' version='9.4.8.v20171121'>
+      <properties size='2'>
+        <property name='artifact.size' value='609806'/>
+        <property name='download.size' value='609806'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jetty.server_9.4.8.v20171121.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jetty.server_9.4.8.v20171121.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.remote.doc.isv' version='1.0.0.201803060126'>
+      <properties size='2'>
+        <property name='artifact.size' value='359539'/>
+        <property name='download.size' value='359539'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.remote.doc.isv_1.0.0.201803060126.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.remote.doc.isv_1.0.0.201803060126.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jst.jsf.core' version='1.8.2.v201803271721'>
+      <properties size='2'>
+        <property name='artifact.size' value='1188311'/>
+        <property name='download.size' value='1188311'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jst.jsf.core_1.8.2.v201803271721.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jst.jsf.core_1.8.2.v201803271721.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.persistence.asm' version='6.0.0.v201710052159'>
+      <properties size='2'>
+        <property name='artifact.size' value='341915'/>
+        <property name='download.size' value='341915'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.persistence.asm_6.0.0.v201710052159.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.persistence.asm_6.0.0.v201710052159.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jpt.jpa.eclipselink.branding' version='3.4.1.v201803012210'>
+      <properties size='2'>
+        <property name='artifact.size' value='17441'/>
+        <property name='download.size' value='17441'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jpt.jpa.eclipselink.branding_3.4.1.v201803012210.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jpt.jpa.eclipselink.branding_3.4.1.v201803012210.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jst.pagedesigner' version='1.8.2.v201803271721'>
+      <properties size='2'>
+        <property name='artifact.size' value='1646154'/>
+        <property name='download.size' value='1646154'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jst.pagedesigner_1.8.2.v201803271721.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jst.pagedesigner_1.8.2.v201803271721.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.epp.mpc.core.win32' version='1.6.4.v20180214-1800'>
+      <properties size='2'>
+        <property name='artifact.size' value='12654'/>
+        <property name='download.size' value='12654'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.epp.mpc.core.win32_1.6.4.v20180214-1800.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.epp.mpc.core.win32_1.6.4.v20180214-1800.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jsf.branding' version='3.5.1.v201803271721'>
+      <properties size='2'>
+        <property name='artifact.size' value='23895'/>
+        <property name='download.size' value='23895'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jsf.branding_3.5.1.v201803271721.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jsf.branding_3.5.1.v201803271721.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.userstorage.oauth' version='1.1.0.v20190307-0457'>
+      <properties size='2'>
+        <property name='artifact.size' value='59644'/>
+        <property name='download.size' value='59644'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.userstorage.oauth_1.1.0.v20190307-0457.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.userstorage.oauth_1.1.0.v20190307-0457.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.php.profiler' version='5.3.0.201803070838'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.php.profiler_5.3.0.201803070838/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.php.profiler_5.3.0.201803070838'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.recommenders.statics.rcp' version='2.5.2.v20180401-1226'>
+      <properties size='2'>
+        <property name='artifact.size' value='26944'/>
+        <property name='download.size' value='26944'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.recommenders.statics.rcp_2.5.2.v20180401-1226.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.recommenders.statics.rcp_2.5.2.v20180401-1226.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.php.ui.importer' version='5.3.0.201803070838'>
+      <properties size='2'>
+        <property name='artifact.size' value='13580'/>
+        <property name='download.size' value='13580'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.php.ui.importer_5.3.0.201803070838.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.php.ui.importer_5.3.0.201803070838.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.wst.sse.core' version='1.1.1002.v201711071507'>
+      <properties size='2'>
+        <property name='artifact.size' value='460002'/>
+        <property name='download.size' value='460002'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.wst.sse.core_1.1.1002.v201711071507.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.wst.sse.core_1.1.1002.v201711071507.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jetty.io' version='9.4.8.v20171121'>
+      <properties size='2'>
+        <property name='artifact.size' value='140146'/>
+        <property name='download.size' value='140146'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jetty.io_9.4.8.v20171121.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jetty.io_9.4.8.v20171121.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.epp.logging.aeri.feature' version='2.0.7.v20170906-1327'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.epp.logging.aeri.feature_2.0.7.v20170906-1327/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.epp.logging.aeri.feature_2.0.7.v20170906-1327'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.persistence.jpa.jpql' version='2.7.1.v20171221-bd47e8f'>
+      <properties size='2'>
+        <property name='artifact.size' value='1413493'/>
+        <property name='download.size' value='1413493'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.persistence.jpa.jpql_2.7.1.v20171221-bd47e8f.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.persistence.jpa.jpql_2.7.1.v20171221-bd47e8f.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.wst.web_ui.feature' version='3.9.2.v201803221834'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.wst.web_ui.feature_3.9.2.v201803221834/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.wst.web_ui.feature_3.9.2.v201803221834'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.remote.ui' version='2.1.0.201803060126'>
+      <properties size='2'>
+        <property name='artifact.size' value='158940'/>
+        <property name='download.size' value='158940'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.remote.ui_2.1.0.201803060126.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.remote.ui_2.1.0.201803060126.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.remote.jsch.ui' version='1.0.0.201803060126'>
+      <properties size='2'>
+        <property name='artifact.size' value='43713'/>
+        <property name='download.size' value='43713'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.remote.jsch.ui_1.0.0.201803060126.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.remote.jsch.ui_1.0.0.201803060126.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.epp.mpc.help.ui' version='1.6.4.v20180214-1800'>
+      <properties size='2'>
+        <property name='artifact.size' value='767772'/>
+        <property name='download.size' value='767772'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.epp.mpc.help.ui_1.6.4.v20180214-1800.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.epp.mpc.help.ui_1.6.4.v20180214-1800.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.recommenders.utils.rcp' version='2.5.2.v20180401-1226'>
+      <properties size='2'>
+        <property name='artifact.size' value='40343'/>
+        <property name='download.size' value='40343'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.recommenders.utils.rcp_2.5.2.v20180401-1226.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.recommenders.utils.rcp_2.5.2.v20180401-1226.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jetty.http' version='9.4.8.v20171121'>
+      <properties size='2'>
+        <property name='artifact.size' value='176366'/>
+        <property name='download.size' value='176366'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jetty.http_9.4.8.v20171121.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jetty.http_9.4.8.v20171121.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jpt.doc.user' version='3.2.101.v201803012210'>
+      <properties size='2'>
+        <property name='artifact.size' value='1877242'/>
+        <property name='download.size' value='1877242'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jpt.doc.user_3.2.101.v201803012210.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jpt.doc.user_3.2.101.v201803012210.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.php.builtin.server.ui' version='5.3.0.201803070838'>
+      <properties size='2'>
+        <property name='artifact.size' value='59584'/>
+        <property name='download.size' value='59584'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.php.builtin.server.ui_5.3.0.201803070838.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.php.builtin.server.ui_5.3.0.201803070838.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.php.core.parser' version='5.3.0.201803070838'>
+      <properties size='2'>
+        <property name='artifact.size' value='132325'/>
+        <property name='download.size' value='132325'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.php.core.parser_5.3.0.201803070838.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.php.core.parser_5.3.0.201803070838.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.jst.web_userdoc.feature' version='3.6.0.v201712131442'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.jst.web_userdoc.feature_3.6.0.v201712131442/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.jst.web_userdoc.feature_3.6.0.v201712131442'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jpt.jpa.eclipselink.core' version='2.4.101.v201803012210'>
+      <properties size='2'>
+        <property name='artifact.size' value='1487416'/>
+        <property name='download.size' value='1487416'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jpt.jpa.eclipselink.core_2.4.101.v201803012210.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jpt.jpa.eclipselink.core_2.4.101.v201803012210.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.php.mylyn' version='5.3.0.201803070838'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.php.mylyn_5.3.0.201803070838/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.php.mylyn_5.3.0.201803070838'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.logback.appender' version='1.8.3.20180227-2137'>
+      <properties size='2'>
+        <property name='artifact.size' value='13889'/>
+        <property name='download.size' value='13889'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.m2e.logback.appender_1.8.3.20180227-2137.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.m2e.logback.appender_1.8.3.20180227-2137.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.php.help' version='5.3.0.201803070838'>
+      <properties size='2'>
+        <property name='artifact.size' value='3530109'/>
+        <property name='download.size' value='3530109'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.php.help_5.3.0.201803070838.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.php.help_5.3.0.201803070838.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.wst.common.modulecore' version='1.3.0.v201803191954'>
+      <properties size='2'>
+        <property name='artifact.size' value='418536'/>
+        <property name='download.size' value='418536'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.wst.common.modulecore_1.3.0.v201803191954.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.wst.common.modulecore_1.3.0.v201803191954.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.pde' version='3.13.4.v20180330-0640'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.pde_3.13.4.v20180330-0640/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.pde_3.13.4.v20180330-0640'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.buildship' version='2.2.1.v20180125-1441'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.buildship_2.2.1.v20180125-1441/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.buildship_2.2.1.v20180125-1441'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.swt.win32.win32.x86_64' version='3.106.3.v20180329-0507'>
+      <properties size='2'>
+        <property name='artifact.size' value='2784242'/>
+        <property name='download.size' value='2784242'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.swt.win32.win32.x86_64_3.106.3.v20180329-0507.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.swt.win32.win32.x86_64_3.106.3.v20180329-0507.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jst.jsf.facelet.ui' version='1.3.112.v201803271721'>
+      <properties size='2'>
+        <property name='artifact.size' value='48073'/>
+        <property name='download.size' value='48073'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jst.jsf.facelet.ui_1.3.112.v201803271721.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jst.jsf.facelet.ui_1.3.112.v201803271721.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jface.text' version='3.12.2.v20180112-1341'>
+      <properties size='2'>
+        <property name='artifact.size' value='1081239'/>
+        <property name='download.size' value='1081239'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jface.text_3.12.2.v20180112-1341.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jface.text_3.12.2.v20180112-1341.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.persistence.dbws' version='2.7.1.v20171221-bd47e8f'>
+      <properties size='2'>
+        <property name='artifact.size' value='353695'/>
+        <property name='download.size' value='353695'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.persistence.dbws_2.7.1.v20171221-bd47e8f.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.persistence.dbws_2.7.1.v20171221-bd47e8f.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.swt' version='3.106.3.v20180329-0507'>
+      <properties size='2'>
+        <property name='artifact.size' value='19371'/>
+        <property name='download.size' value='19371'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.swt_3.106.3.v20180329-0507.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.swt_3.106.3.v20180329-0507.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.cdt.native.serial' version='1.1.0.201802261533'>
+      <properties size='2'>
+        <property name='artifact.size' value='230178'/>
+        <property name='download.size' value='230178'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.cdt.native.serial_1.1.0.201802261533.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.cdt.native.serial_1.1.0.201802261533.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.epp.logging.aeri.ide' version='2.0.7.v20170906-1327'>
+      <properties size='2'>
+        <property name='artifact.size' value='446305'/>
+        <property name='download.size' value='446305'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.epp.logging.aeri.ide_2.0.7.v20170906-1327.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.epp.logging.aeri.ide_2.0.7.v20170906-1327.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jst.jsf.facelet.core' version='1.4.2.v201803271721'>
+      <properties size='2'>
+        <property name='artifact.size' value='666597'/>
+        <property name='download.size' value='666597'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jst.jsf.facelet.core_1.4.2.v201803271721.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jst.jsf.facelet.core_1.4.2.v201803271721.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.gradleware.tooling.client' version='0.19.4.v20171108133209'>
+      <properties size='2'>
+        <property name='artifact.size' value='57251'/>
+        <property name='download.size' value='57251'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/com.gradleware.tooling.client_0.19.4.v20171108133209.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\com.gradleware.tooling.client_0.19.4.v20171108133209.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jdt.apt.pluggable.core' version='1.2.50.v20180322-1206'>
+      <properties size='2'>
+        <property name='artifact.size' value='36047'/>
+        <property name='download.size' value='36047'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jdt.apt.pluggable.core_1.2.50.v20180322-1206.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jdt.apt.pluggable.core_1.2.50.v20180322-1206.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.jst.webpageeditor.feature' version='2.9.0.v201803271721'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.jst.webpageeditor.feature_2.9.0.v201803271721/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.jst.webpageeditor.feature_2.9.0.v201803271721'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.slf4j.api' version='1.7.10.v20170428-1633'>
+      <properties size='2'>
+        <property name='artifact.size' value='43516'/>
+        <property name='download.size' value='43516'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.slf4j.api_1.7.10.v20170428-1633.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.slf4j.api_1.7.10.v20170428-1633.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.recommenders.calls.rcp' version='2.5.2.v20180401-1226'>
+      <properties size='2'>
+        <property name='artifact.size' value='70652'/>
+        <property name='download.size' value='70652'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.recommenders.calls.rcp_2.5.2.v20180401-1226.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.recommenders.calls.rcp_2.5.2.v20180401-1226.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.jacoco.agent' version='0.8.1.v20180329-2024'>
+      <properties size='2'>
+        <property name='artifact.size' value='258886'/>
+        <property name='download.size' value='258886'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.jacoco.agent_0.8.1.v20180329-2024.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.jacoco.agent_0.8.1.v20180329-2024.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jetty.xml' version='9.4.8.v20171121'>
+      <properties size='2'>
+        <property name='artifact.size' value='59349'/>
+        <property name='download.size' value='59349'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jetty.xml_9.4.8.v20171121.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jetty.xml_9.4.8.v20171121.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.recommenders.statics' version='2.5.2.v20180401-1226'>
+      <properties size='2'>
+        <property name='artifact.size' value='16571'/>
+        <property name='download.size' value='16571'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.recommenders.statics_2.5.2.v20180401-1226.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.recommenders.statics_2.5.2.v20180401-1226.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.pde.api.tools' version='1.1.150.v20180328-0710'>
+      <properties size='2'>
+        <property name='artifact.size' value='923861'/>
+        <property name='download.size' value='923861'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.pde.api.tools_1.1.150.v20180328-0710.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.pde.api.tools_1.1.150.v20180328-0710.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.wst.web_core.feature' version='3.9.2.v201803221834'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.wst.web_core.feature_3.9.2.v201803221834/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.wst.web_core.feature_3.9.2.v201803221834'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.wst.jsdt.js.npm' version='1.0.300.v201711211802'>
+      <properties size='2'>
+        <property name='artifact.size' value='61581'/>
+        <property name='download.size' value='61581'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.wst.jsdt.js.npm_1.0.300.v201711211802.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.wst.jsdt.js.npm_1.0.300.v201711211802.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.recommenders.jayes.io' version='2.5.2.v20180401-1226'>
+      <properties size='2'>
+        <property name='artifact.size' value='44665'/>
+        <property name='download.size' value='44665'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.recommenders.jayes.io_2.5.2.v20180401-1226.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.recommenders.jayes.io_2.5.2.v20180401-1226.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.jsf.feature' version='3.10.0.v201803271721'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.jsf.feature_3.10.0.v201803271721/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.jsf.feature_3.10.0.v201803271721'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jdt.debug.ui' version='3.8.100.v20180322-1256'>
+      <properties size='2'>
+        <property name='artifact.size' value='1690046'/>
+        <property name='download.size' value='1690046'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jdt.debug.ui_3.8.100.v20180322-1256.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jdt.debug.ui_3.8.100.v20180322-1256.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jpt.jpa.branding' version='3.4.1.v201803012210'>
+      <properties size='2'>
+        <property name='artifact.size' value='17319'/>
+        <property name='download.size' value='17319'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jpt.jpa.branding_3.4.1.v201803012210.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jpt.jpa.branding_3.4.1.v201803012210.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.remote.console' version='1.2.0.201803060126'>
+      <properties size='2'>
+        <property name='artifact.size' value='62639'/>
+        <property name='download.size' value='62639'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.remote.console_1.2.0.201803060126.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.remote.console_1.2.0.201803060126.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jdt.launching' version='3.9.100.v20180323-1351'>
+      <properties size='2'>
+        <property name='artifact.size' value='352513'/>
+        <property name='download.size' value='352513'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jdt.launching_3.9.100.v20180323-1351.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jdt.launching_3.9.100.v20180323-1351.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jdt.compiler.tool' version='1.2.101.v20180329-0935'>
+      <properties size='2'>
+        <property name='artifact.size' value='203349'/>
+        <property name='download.size' value='203349'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jdt.compiler.tool_1.2.101.v20180329-0935.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jdt.compiler.tool_1.2.101.v20180329-0935.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jst.ws.jaxrs.core' version='1.0.800.v201802121827'>
+      <properties size='2'>
+        <property name='artifact.size' value='155692'/>
+        <property name='download.size' value='155692'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jst.ws.jaxrs.core_1.0.800.v201802121827.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jst.ws.jaxrs.core_1.0.800.v201802121827.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jpt.dbws.eclipselink.branding' version='1.2.101.v201803012210'>
+      <properties size='2'>
+        <property name='artifact.size' value='17447'/>
+        <property name='download.size' value='17447'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jpt.dbws.eclipselink.branding_1.2.101.v201803012210.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jpt.dbws.eclipselink.branding_1.2.101.v201803012210.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.wst.common.emf' version='1.2.501.v201803221834'>
+      <properties size='2'>
+        <property name='artifact.size' value='227703'/>
+        <property name='download.size' value='227703'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.wst.common.emf_1.2.501.v201803221834.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.wst.common.emf_1.2.501.v201803221834.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jpt.common.eclipselink.core' version='1.3.201.v201803012210'>
+      <properties size='2'>
+        <property name='artifact.size' value='294175'/>
+        <property name='download.size' value='294175'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jpt.common.eclipselink.core_1.3.201.v201803012210.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jpt.common.eclipselink.core_1.3.201.v201803012210.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.e4.rcp' version='1.6.3.v20180329-0507'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.e4.rcp_1.6.3.v20180329-0507/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.e4.rcp_1.6.3.v20180329-0507'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.objectweb.asm.commons' version='6.0.0.v20180116-1719'>
+      <properties size='2'>
+        <property name='artifact.size' value='97570'/>
+        <property name='download.size' value='97570'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.objectweb.asm.commons_6.0.0.v20180116-1719.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.objectweb.asm.commons_6.0.0.v20180116-1719.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.php.phpunit.feature' version='5.3.0.201803070838'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.php.phpunit.feature_5.3.0.201803070838/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.php.phpunit.feature_5.3.0.201803070838'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jpt.jaxb.eclipselink.branding' version='1.4.101.v201803012210'>
+      <properties size='2'>
+        <property name='artifact.size' value='17453'/>
+        <property name='download.size' value='17453'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jpt.jaxb.eclipselink.branding_1.4.101.v201803012210.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jpt.jaxb.eclipselink.branding_1.4.101.v201803012210.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.discovery' version='1.8.3.20180227-2137'>
+      <properties size='2'>
+        <property name='artifact.size' value='79723'/>
+        <property name='download.size' value='79723'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.m2e.discovery_1.8.3.20180227-2137.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.m2e.discovery_1.8.3.20180227-2137.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.php.formatter.core' version='5.3.0.201803070838'>
+      <properties size='2'>
+        <property name='artifact.size' value='115351'/>
+        <property name='download.size' value='115351'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.php.formatter.core_5.3.0.201803070838.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.php.formatter.core_5.3.0.201803070838.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.gradle.toolingapi' version='4.3.0.v20171108133209'>
+      <properties size='2'>
+        <property name='artifact.size' value='1898113'/>
+        <property name='download.size' value='1898113'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.gradle.toolingapi_4.3.0.v20171108133209.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.gradle.toolingapi_4.3.0.v20171108133209.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.jacoco.core' version='0.8.1.v20180329-2024'>
+      <properties size='2'>
+        <property name='artifact.size' value='186392'/>
+        <property name='download.size' value='186392'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.jacoco.core_0.8.1.v20180329-2024.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.jacoco.core_0.8.1.v20180329-2024.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.recommenders.apidocs' version='2.5.2.v20180401-1226'>
+      <properties size='2'>
+        <property name='artifact.size' value='26925'/>
+        <property name='download.size' value='26925'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.recommenders.apidocs_2.5.2.v20180401-1226.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.recommenders.apidocs_2.5.2.v20180401-1226.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.epp.mpc.ui' version='1.6.4.v20180214-1800'>
+      <properties size='2'>
+        <property name='artifact.size' value='601102'/>
+        <property name='download.size' value='601102'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.epp.mpc.ui_1.6.4.v20180214-1800.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.epp.mpc.ui_1.6.4.v20180214-1800.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.persistence.dbws.builder' version='2.7.1.v20171221-bd47e8f'>
+      <properties size='2'>
+        <property name='artifact.size' value='237330'/>
+        <property name='download.size' value='237330'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.persistence.dbws.builder_2.7.1.v20171221-bd47e8f.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.persistence.dbws.builder_2.7.1.v20171221-bd47e8f.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.php.phpunit' version='5.3.0.201803070838'>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.php.phpunit_5.3.0.201803070838/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.php.phpunit_5.3.0.201803070838'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.wst.jsdt.feature' version='2.1.1.v201803202007'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.wst.jsdt.feature_2.1.1.v201803202007/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.wst.jsdt.feature_2.1.1.v201803202007'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jst.jsf.ui' version='1.6.102.v201803271721'>
+      <properties size='2'>
+        <property name='artifact.size' value='268506'/>
+        <property name='download.size' value='268506'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jst.jsf.ui_1.6.102.v201803271721.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jst.jsf.ui_1.6.102.v201803271721.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.php.builtin.server.core' version='5.3.0.201803070838'>
+      <properties size='2'>
+        <property name='artifact.size' value='118013'/>
+        <property name='download.size' value='118013'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.php.builtin.server.core_5.3.0.201803070838.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.php.builtin.server.core_5.3.0.201803070838.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.pde.doc.user' version='3.13.75.v20180328-1557'>
+      <properties size='2'>
+        <property name='artifact.size' value='7391278'/>
+        <property name='download.size' value='7391278'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.pde.doc.user_3.13.75.v20180328-1557.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.pde.doc.user_3.13.75.v20180328-1557.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.wst.web_userdoc.feature' version='3.9.2.v201710252304'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.wst.web_userdoc.feature_3.9.2.v201710252304/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.wst.web_userdoc.feature_3.9.2.v201710252304'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jst.standard.schemas' version='1.2.202.v201802152012'>
+      <properties size='2'>
+        <property name='artifact.size' value='536022'/>
+        <property name='download.size' value='536022'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jst.standard.schemas_1.2.202.v201802152012.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jst.standard.schemas_1.2.202.v201802152012.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.recommenders.apidocs.rcp' version='2.5.2.v20180401-1226'>
+      <properties size='2'>
+        <property name='artifact.size' value='107338'/>
+        <property name='download.size' value='107338'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.recommenders.apidocs.rcp_2.5.2.v20180401-1226.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.recommenders.apidocs.rcp_2.5.2.v20180401-1226.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.recommenders.overrides' version='2.5.2.v20180401-1226'>
+      <properties size='2'>
+        <property name='artifact.size' value='23077'/>
+        <property name='download.size' value='23077'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.recommenders.overrides_2.5.2.v20180401-1226.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.recommenders.overrides_2.5.2.v20180401-1226.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.core.ui' version='1.8.3.20180227-2137'>
+      <properties size='2'>
+        <property name='artifact.size' value='780900'/>
+        <property name='download.size' value='780900'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.m2e.core.ui_1.8.3.20180227-2137.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.m2e.core.ui_1.8.3.20180227-2137.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.refactoring' version='1.8.3.20180227-2137'>
+      <properties size='2'>
+        <property name='artifact.size' value='78300'/>
+        <property name='download.size' value='78300'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.m2e.refactoring_1.8.3.20180227-2137.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.m2e.refactoring_1.8.3.20180227-2137.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.eclemma.feature' version='3.1.0.201804041601'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.eclemma.feature_3.1.0.201804041601/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.eclemma.feature_3.1.0.201804041601'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.recommenders.rcp.feature' version='2.5.2.v20180401-1226'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.recommenders.rcp.feature_2.5.2.v20180401-1226/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.recommenders.rcp.feature_2.5.2.v20180401-1226'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.gradleware.tooling.utils' version='0.19.4.v20171108133209'>
+      <properties size='2'>
+        <property name='artifact.size' value='25337'/>
+        <property name='download.size' value='25337'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/com.gradleware.tooling.utils_0.19.4.v20171108133209.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\com.gradleware.tooling.utils_0.19.4.v20171108133209.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.eclemma.ui' version='3.1.0.201804041601'>
+      <properties size='2'>
+        <property name='artifact.size' value='311754'/>
+        <property name='download.size' value='311754'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.eclemma.ui_3.1.0.201804041601.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.eclemma.ui_3.1.0.201804041601.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.osgi' version='3.12.100.v20180210-1608'>
+      <properties size='2'>
+        <property name='artifact.size' value='1387666'/>
+        <property name='download.size' value='1387666'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.osgi_3.12.100.v20180210-1608.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.osgi_3.12.100.v20180210-1608.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.jst.common.fproj.enablement.jdt' version='3.10.0.v201803211504'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.jst.common.fproj.enablement.jdt_3.10.0.v201803211504/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.jst.common.fproj.enablement.jdt_3.10.0.v201803211504'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jpt.jpa.eclipselink.core.ddlgen' version='2.2.201.v201803012210'>
+      <properties size='2'>
+        <property name='artifact.size' value='14196'/>
+        <property name='download.size' value='14196'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jpt.jpa.eclipselink.core.ddlgen_2.2.201.v201803012210.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jpt.jpa.eclipselink.core.ddlgen_2.2.201.v201803012210.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.jpt.jaxb.feature' version='1.5.100.v201803012210'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.jpt.jaxb.feature_1.5.100.v201803012210/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.jpt.jaxb.feature_1.5.100.v201803012210'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.wst.common_core.feature' version='3.9.1.v201803221834'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.wst.common_core.feature_3.9.1.v201803221834/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.wst.common_core.feature_3.9.1.v201803221834'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.php.profile.core' version='5.3.0.201803070838'>
+      <properties size='2'>
+        <property name='artifact.size' value='53089'/>
+        <property name='download.size' value='53089'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.php.profile.core_5.3.0.201803070838.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.php.profile.core_5.3.0.201803070838.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.remote.core' version='4.0.0.201803060126'>
+      <properties size='2'>
+        <property name='artifact.size' value='151057'/>
+        <property name='download.size' value='151057'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.remote.core_4.0.0.201803060126.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.remote.core_4.0.0.201803060126.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.remote.telnet.ui' version='1.0.0.201803060126'>
+      <properties size='2'>
+        <property name='artifact.size' value='103770'/>
+        <property name='download.size' value='103770'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.remote.telnet.ui_1.0.0.201803060126.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.remote.telnet.ui_1.0.0.201803060126.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.ptp.remote' version='9.1.4.201802282054'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.ptp.remote_9.1.4.201802282054/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.ptp.remote_9.1.4.201802282054'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.profiles.ui' version='1.8.3.20180227-2137'>
+      <properties size='2'>
+        <property name='artifact.size' value='45446'/>
+        <property name='download.size' value='45446'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.m2e.profiles.ui_1.8.3.20180227-2137.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.m2e.profiles.ui_1.8.3.20180227-2137.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.php' version='5.3.0.201803070838'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.php_5.3.0.201803070838/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.php_5.3.0.201803070838'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.cdt.core.native' version='5.10.0.201802261533'>
+      <properties size='2'>
+        <property name='artifact.size' value='37739'/>
+        <property name='download.size' value='37739'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.cdt.core.native_5.10.0.201802261533.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.cdt.core.native_5.10.0.201802261533.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jdt.compiler.apt' version='1.3.110.v20180329-0935'>
+      <properties size='2'>
+        <property name='artifact.size' value='215360'/>
+        <property name='download.size' value='215360'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jdt.compiler.apt_1.3.110.v20180329-0935.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jdt.compiler.apt_1.3.110.v20180329-0935.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jpt.jaxb.branding' version='1.4.1.v201803012210'>
+      <properties size='2'>
+        <property name='artifact.size' value='17336'/>
+        <property name='download.size' value='17336'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jpt.jaxb.branding_1.4.1.v201803012210.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jpt.jaxb.branding_1.4.1.v201803012210.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.wst.xsd.ui' version='1.2.602.v201801171858'>
+      <properties size='2'>
+        <property name='artifact.size' value='1315172'/>
+        <property name='download.size' value='1315172'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.wst.xsd.ui_1.2.602.v201801171858.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.wst.xsd.ui_1.2.602.v201801171858.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.buildship.branding' version='2.2.1.v20180125-1441'>
+      <properties size='2'>
+        <property name='artifact.size' value='11938'/>
+        <property name='download.size' value='11938'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.buildship.branding_2.2.1.v20180125-1441.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.buildship.branding_2.2.1.v20180125-1441.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.recommenders.coordinates.rcp' version='2.5.2.v20180401-1226'>
+      <properties size='2'>
+        <property name='artifact.size' value='96534'/>
+        <property name='download.size' value='96534'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.recommenders.coordinates.rcp_2.5.2.v20180401-1226.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.recommenders.coordinates.rcp_2.5.2.v20180401-1226.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.logback.configuration' version='1.8.3.20180227-2137'>
+      <properties size='2'>
+        <property name='artifact.size' value='17165'/>
+        <property name='download.size' value='17165'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.m2e.logback.configuration_1.8.3.20180227-2137.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.m2e.logback.configuration_1.8.3.20180227-2137.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jdt.apt.ui' version='3.5.50.v20180322-1206'>
+      <properties size='2'>
+        <property name='artifact.size' value='72128'/>
+        <property name='download.size' value='72128'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jdt.apt.ui_3.5.50.v20180322-1206.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jdt.apt.ui_3.5.50.v20180322-1206.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.php.server.core' version='5.3.0.201803070838'>
+      <properties size='2'>
+        <property name='artifact.size' value='51936'/>
+        <property name='download.size' value='51936'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.php.server.core_5.3.0.201803070838.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.php.server.core_5.3.0.201803070838.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.remote.serial.ui' version='1.0.0.201803060126'>
+      <properties size='2'>
+        <property name='artifact.size' value='75341'/>
+        <property name='download.size' value='75341'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.remote.serial.ui_1.0.0.201803060126.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.remote.serial.ui_1.0.0.201803060126.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.recommenders.rcp' version='2.5.2.v20180401-1226'>
+      <properties size='2'>
+        <property name='artifact.size' value='169338'/>
+        <property name='download.size' value='169338'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.recommenders.rcp_2.5.2.v20180401-1226.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.recommenders.rcp_2.5.2.v20180401-1226.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jdt.annotation' version='1.1.150.v20180322-1206'>
+      <properties size='2'>
+        <property name='artifact.size' value='15383'/>
+        <property name='download.size' value='15383'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jdt.annotation_1.1.150.v20180322-1206.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jdt.annotation_1.1.150.v20180322-1206.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.recommenders.constructors.rcp' version='2.5.2.v20180401-1226'>
+      <properties size='2'>
+        <property name='artifact.size' value='25525'/>
+        <property name='download.size' value='25525'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.recommenders.constructors.rcp_2.5.2.v20180401-1226.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.recommenders.constructors.rcp_2.5.2.v20180401-1226.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.jpt.jpa.feature' version='3.5.101.v201803161350'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.jpt.jpa.feature_3.5.101.v201803161350/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.jpt.jpa.feature_3.5.101.v201803161350'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jpt.jpa.core' version='3.5.1.v201803012210'>
+      <properties size='2'>
+        <property name='artifact.size' value='3103525'/>
+        <property name='download.size' value='3103525'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jpt.jpa.core_3.5.1.v201803012210.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jpt.jpa.core_3.5.1.v201803012210.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jpt.common.branding' version='1.4.1.v201803012210'>
+      <properties size='2'>
+        <property name='artifact.size' value='17347'/>
+        <property name='download.size' value='17347'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jpt.common.branding_1.4.1.v201803012210.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jpt.common.branding_1.4.1.v201803012210.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.php.debug.core' version='5.3.0.201803070838'>
+      <properties size='2'>
+        <property name='artifact.size' value='901456'/>
+        <property name='download.size' value='901456'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.php.debug.core_5.3.0.201803070838.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.php.debug.core_5.3.0.201803070838.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.e4.ui.workbench.renderers.swt' version='0.14.102.v20180117-1153'>
+      <properties size='2'>
+        <property name='artifact.size' value='262139'/>
+        <property name='download.size' value='262139'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.e4.ui.workbench.renderers.swt_0.14.102.v20180117-1153.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.e4.ui.workbench.renderers.swt_0.14.102.v20180117-1153.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='ch.qos.logback.core' version='1.1.2.v20160208-0839'>
+      <properties size='2'>
+        <property name='artifact.size' value='473878'/>
+        <property name='download.size' value='473878'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/ch.qos.logback.core_1.1.2.v20160208-0839.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\ch.qos.logback.core_1.1.2.v20160208-0839.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jst.jsf.facesconfig' version='1.5.102.v201803271721'>
+      <properties size='2'>
+        <property name='artifact.size' value='1207922'/>
+        <property name='download.size' value='1207922'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jst.jsf.facesconfig_1.5.102.v201803271721.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jst.jsf.facesconfig_1.5.102.v201803271721.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jpt.jpa.annotate' version='1.0.101.v201803012210'>
+      <properties size='2'>
+        <property name='artifact.size' value='55773'/>
+        <property name='download.size' value='55773'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jpt.jpa.annotate_1.0.101.v201803012210.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jpt.jpa.annotate_1.0.101.v201803012210.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.pde.ui' version='3.10.100.v20180322-0726'>
+      <properties size='2'>
+        <property name='artifact.size' value='4633452'/>
+        <property name='download.size' value='4633452'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.pde.ui_3.10.100.v20180322-0726.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.pde.ui_3.10.100.v20180322-0726.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.jst.web_ui.feature' version='3.9.0.v201803221834'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.jst.web_ui.feature_3.9.0.v201803221834/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.jst.web_ui.feature_3.9.0.v201803221834'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.jpt.jpa.eclipselink.feature' version='3.4.101.v201803161350'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.jpt.jpa.eclipselink.feature_3.4.101.v201803161350/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.jpt.jpa.eclipselink.feature_3.4.101.v201803161350'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.epp.mpc' version='1.6.4.v20180214-1810'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.epp.mpc_1.6.4.v20180214-1810/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.epp.mpc_1.6.4.v20180214-1810'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jst.common.project.facet.core' version='1.6.0.v201803211504'>
+      <properties size='2'>
+        <property name='artifact.size' value='179302'/>
+        <property name='download.size' value='179302'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jst.common.project.facet.core_1.6.0.v201803211504.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jst.common.project.facet.core_1.6.0.v201803211504.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.recommenders.chain.rcp' version='2.5.2.v20180401-1226'>
+      <properties size='2'>
+        <property name='artifact.size' value='57131'/>
+        <property name='download.size' value='57131'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.recommenders.chain.rcp_2.5.2.v20180401-1226.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.recommenders.chain.rcp_2.5.2.v20180401-1226.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.maven.runtime.slf4j.simple' version='1.8.3.20180227-2135'>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.m2e.maven.runtime.slf4j.simple_1.8.3.20180227-2135/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.m2e.maven.runtime.slf4j.simple_1.8.3.20180227-2135'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.recommenders.jdt' version='2.5.2.v20180401-1226'>
+      <properties size='2'>
+        <property name='artifact.size' value='30919'/>
+        <property name='download.size' value='30919'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.recommenders.jdt_2.5.2.v20180401-1226.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.recommenders.jdt_2.5.2.v20180401-1226.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jpt.dbws.eclipselink.ui' version='1.1.201.v201803012210'>
+      <properties size='2'>
+        <property name='artifact.size' value='69325'/>
+        <property name='download.size' value='69325'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jpt.dbws.eclipselink.ui_1.1.201.v201803012210.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jpt.dbws.eclipselink.ui_1.1.201.v201803012210.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.wst.html.core' version='1.2.102.v201711080031'>
+      <properties size='2'>
+        <property name='artifact.size' value='755857'/>
+        <property name='download.size' value='755857'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.wst.html.core_1.2.102.v201711080031.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.wst.html.core_1.2.102.v201711080031.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jdt.apt.core' version='3.5.100.v20180322-1206'>
+      <properties size='2'>
+        <property name='artifact.size' value='390269'/>
+        <property name='download.size' value='390269'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jdt.apt.core_3.5.100.v20180322-1206.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jdt.apt.core_3.5.100.v20180322-1206.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.platform' version='4.7.3.v20180330-0640'>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.platform_4.7.3.v20180330-0640/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.platform_4.7.3.v20180330-0640'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jpt.common.utility' version='2.4.1.v201803012210'>
+      <properties size='2'>
+        <property name='artifact.size' value='1329095'/>
+        <property name='download.size' value='1329095'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jpt.common.utility_2.4.1.v201803012210.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jpt.common.utility_2.4.1.v201803012210.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jpt.common.core' version='1.5.1.v201803012210'>
+      <properties size='2'>
+        <property name='artifact.size' value='547388'/>
+        <property name='download.size' value='547388'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jpt.common.core_1.5.1.v201803012210.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jpt.common.core_1.5.1.v201803012210.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.lifecyclemapping.defaults' version='1.8.3.20180227-2137'>
+      <properties size='2'>
+        <property name='artifact.size' value='10663'/>
+        <property name='download.size' value='10663'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.m2e.lifecyclemapping.defaults_1.8.3.20180227-2137.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.m2e.lifecyclemapping.defaults_1.8.3.20180227-2137.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.wst.jsdt.web.ui' version='1.1.0.v201711080031'>
+      <properties size='2'>
+        <property name='artifact.size' value='222539'/>
+        <property name='download.size' value='222539'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.wst.jsdt.web.ui_1.1.0.v201711080031.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.wst.jsdt.web.ui_1.1.0.v201711080031.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.wst.xml.core' version='1.1.1101.v201711080222'>
+      <properties size='2'>
+        <property name='artifact.size' value='789012'/>
+        <property name='download.size' value='789012'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.wst.xml.core_1.1.1101.v201711080222.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.wst.xml.core_1.1.1101.v201711080222.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.jacoco.report' version='0.8.1.v20180329-2024'>
+      <properties size='2'>
+        <property name='artifact.size' value='147786'/>
+        <property name='download.size' value='147786'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.jacoco.report_0.8.1.v20180329-2024.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.jacoco.report_0.8.1.v20180329-2024.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.core' version='1.8.3.20180227-2137'>
+      <properties size='2'>
+        <property name='artifact.size' value='619287'/>
+        <property name='download.size' value='619287'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.m2e.core_1.8.3.20180227-2137.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.m2e.core_1.8.3.20180227-2137.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jst.jsp.core' version='1.2.1002.v201711072103'>
+      <properties size='2'>
+        <property name='artifact.size' value='687459'/>
+        <property name='download.size' value='687459'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jst.jsp.core_1.2.1002.v201711072103.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jst.jsp.core_1.2.1002.v201711072103.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.wst.jsdt.ui' version='2.0.301.v201710051729'>
+      <properties size='2'>
+        <property name='artifact.size' value='8565639'/>
+        <property name='download.size' value='8565639'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.wst.jsdt.ui_2.0.301.v201710051729.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.wst.jsdt.ui_2.0.301.v201710051729.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jst.jsf.common' version='1.5.103.v201803271721'>
+      <properties size='2'>
+        <property name='artifact.size' value='679502'/>
+        <property name='download.size' value='679502'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jst.jsf.common_1.5.103.v201803271721.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jst.jsf.common_1.5.103.v201803271721.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jst.jsf.facesconfig.ui' version='1.5.2.v201803271721'>
+      <properties size='2'>
+        <property name='artifact.size' value='927874'/>
+        <property name='download.size' value='927874'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jst.jsf.facesconfig.ui_1.5.2.v201803271721.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jst.jsf.facesconfig.ui_1.5.2.v201803271721.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.php.composer.api' version='5.3.0.201803070838'>
+      <properties size='2'>
+        <property name='artifact.size' value='133068'/>
+        <property name='download.size' value='133068'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.php.composer.api_5.3.0.201803070838.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.php.composer.api_5.3.0.201803070838.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.recommenders.jayes' version='2.5.2.v20180401-1226'>
+      <properties size='2'>
+        <property name='artifact.size' value='97907'/>
+        <property name='download.size' value='97907'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.recommenders.jayes_2.5.2.v20180401-1226.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.recommenders.jayes_2.5.2.v20180401-1226.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.eclemma.doc' version='3.1.0.201804041601'>
+      <properties size='2'>
+        <property name='artifact.size' value='229043'/>
+        <property name='download.size' value='229043'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.eclemma.doc_3.1.0.201804041601.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.eclemma.doc_3.1.0.201804041601.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.scm' version='1.8.3.20180227-2137'>
+      <properties size='2'>
+        <property name='artifact.size' value='71134'/>
+        <property name='download.size' value='71134'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.m2e.scm_1.8.3.20180227-2137.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.m2e.scm_1.8.3.20180227-2137.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.recommenders.utils' version='2.5.2.v20180401-1226'>
+      <properties size='2'>
+        <property name='artifact.size' value='114444'/>
+        <property name='download.size' value='114444'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.recommenders.utils_2.5.2.v20180401-1226.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.recommenders.utils_2.5.2.v20180401-1226.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.wst.xml_userdoc.feature' version='3.9.2.v201711071522'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.wst.xml_userdoc.feature_3.9.2.v201711071522/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.wst.xml_userdoc.feature_3.9.2.v201711071522'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.cdt.core.win32.x86_64' version='5.4.1.201802261533'>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.cdt.core.win32.x86_64_5.4.1.201802261533/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.cdt.core.win32.x86_64_5.4.1.201802261533'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jdt.ui' version='3.13.100.v20180330-0726'>
+      <properties size='2'>
+        <property name='artifact.size' value='11985594'/>
+        <property name='download.size' value='11985594'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jdt.ui_3.13.100.v20180330-0726.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jdt.ui_3.13.100.v20180330-0726.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jetty.util' version='9.4.8.v20171121'>
+      <properties size='2'>
+        <property name='artifact.size' value='505985'/>
+        <property name='download.size' value='505985'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jetty.util_9.4.8.v20171121.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jetty.util_9.4.8.v20171121.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ptp.rdt.sync.git.core' version='2.0.0.201802282054'>
+      <properties size='2'>
+        <property name='artifact.size' value='64885'/>
+        <property name='download.size' value='64885'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.ptp.rdt.sync.git.core_2.0.0.201802282054.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.ptp.rdt.sync.git.core_2.0.0.201802282054.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.objectweb.asm' version='6.0.0.v20180116-1719'>
+      <properties size='2'>
+        <property name='artifact.size' value='114201'/>
+        <property name='download.size' value='114201'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.objectweb.asm_6.0.0.v20180116-1719.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.objectweb.asm_6.0.0.v20180116-1719.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.recommenders.mylyn.rcp.feature' version='2.5.2.v20180401-1226'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.recommenders.mylyn.rcp.feature_2.5.2.v20180401-1226/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.recommenders.mylyn.rcp.feature_2.5.2.v20180401-1226'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jpt.jaxb.core' version='1.4.101.v201803012210'>
+      <properties size='2'>
+        <property name='artifact.size' value='756461'/>
+        <property name='download.size' value='756461'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jpt.jaxb.core_1.4.101.v201803012210.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jpt.jaxb.core_1.4.101.v201803012210.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.pde.ds.annotations' version='1.1.1.v20180301-1154'>
+      <properties size='2'>
+        <property name='artifact.size' value='182358'/>
+        <property name='download.size' value='182358'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.pde.ds.annotations_1.1.1.v20180301-1154.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.pde.ds.annotations_1.1.1.v20180301-1154.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.remote' version='3.0.0.201803060126'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.remote_3.0.0.201803060126/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.remote_3.0.0.201803060126'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.buildship.core' version='2.2.1.v20180125-1441'>
+      <properties size='2'>
+        <property name='artifact.size' value='359018'/>
+        <property name='download.size' value='359018'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.buildship.core_2.2.1.v20180125-1441.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.buildship.core_2.2.1.v20180125-1441.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jst.jsf.common.ui' version='1.5.101.v201803271721'>
+      <properties size='2'>
+        <property name='artifact.size' value='294790'/>
+        <property name='download.size' value='294790'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jst.jsf.common.ui_1.5.101.v201803271721.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jst.jsf.common.ui_1.5.101.v201803271721.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jpt.jpa.db' version='2.2.201.v201803012210'>
+      <properties size='2'>
+        <property name='artifact.size' value='114502'/>
+        <property name='download.size' value='114502'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jpt.jpa.db_2.2.201.v201803012210.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jpt.jpa.db_2.2.201.v201803012210.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jdt.doc.user' version='3.13.75.v20180329-0655'>
+      <properties size='2'>
+        <property name='artifact.size' value='11785651'/>
+        <property name='download.size' value='11785651'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jdt.doc.user_3.13.75.v20180329-0655.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jdt.doc.user_3.13.75.v20180329-0655.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.php.composer.core' version='5.3.0.201803070838'>
+      <properties size='2'>
+        <property name='artifact.size' value='121055'/>
+        <property name='download.size' value='121055'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.php.composer.core_5.3.0.201803070838.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.php.composer.core_5.3.0.201803070838.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.userstorage.ui' version='1.1.0.v20190307-0457'>
+      <properties size='2'>
+        <property name='artifact.size' value='46008'/>
+        <property name='download.size' value='46008'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.userstorage.ui_1.1.0.v20190307-0457.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.userstorage.ui_1.1.0.v20190307-0457.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.php.rdt.sync.ui' version='5.3.0.201803070838'>
+      <properties size='2'>
+        <property name='artifact.size' value='14173'/>
+        <property name='download.size' value='14173'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.php.rdt.sync.ui_5.3.0.201803070838.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.php.rdt.sync.ui_5.3.0.201803070838.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.archetype.common' version='1.8.3.20180227-2135'>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.m2e.archetype.common_1.8.3.20180227-2135/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.m2e.archetype.common_1.8.3.20180227-2135'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.jst.web_core.feature' version='3.9.1.v201802152012'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.jst.web_core.feature_3.9.1.v201802152012/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.jst.web_core.feature_3.9.1.v201802152012'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jpt.jaxb.eclipselink.ui' version='1.4.201.v201803012210'>
+      <properties size='2'>
+        <property name='artifact.size' value='70902'/>
+        <property name='download.size' value='70902'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jpt.jaxb.eclipselink.ui_1.4.201.v201803012210.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jpt.jaxb.eclipselink.ui_1.4.201.v201803012210.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.wst.json_ui.feature' version='1.1.2.v201711071522'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.wst.json_ui.feature_1.1.2.v201711071522/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.wst.json_ui.feature_1.1.2.v201711071522'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.wst.json_core.feature' version='1.1.2.v201711071522'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.wst.json_core.feature_1.1.2.v201711071522/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.wst.json_core.feature_1.1.2.v201711071522'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.recommenders.injection' version='2.5.2.v20180401-1226'>
+      <properties size='2'>
+        <property name='artifact.size' value='18483'/>
+        <property name='download.size' value='18483'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.recommenders.injection_2.5.2.v20180401-1226.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.recommenders.injection_2.5.2.v20180401-1226.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jdt.core' version='3.13.102.v20180330-0919'>
+      <properties size='2'>
+        <property name='artifact.size' value='6752162'/>
+        <property name='download.size' value='6752162'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jdt.core_3.13.102.v20180330-0919.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jdt.core_3.13.102.v20180330-0919.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.google.inject.multibindings' version='3.0.0.v201605172100'>
+      <properties size='2'>
+        <property name='artifact.size' value='43618'/>
+        <property name='download.size' value='43618'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/com.google.inject.multibindings_3.0.0.v201605172100.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\com.google.inject.multibindings_3.0.0.v201605172100.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='javax.persistence' version='2.2.0.v201708071007'>
+      <properties size='2'>
+        <property name='artifact.size' value='196273'/>
+        <property name='download.size' value='196273'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/javax.persistence_2.2.0.v201708071007.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\javax.persistence_2.2.0.v201708071007.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.wst.common_ui.feature' version='3.9.1.v201803221834'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.wst.common_ui.feature_3.9.1.v201803221834/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.wst.common_ui.feature_3.9.1.v201803221834'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.editor' version='1.8.3.20180227-2137'>
+      <properties size='2'>
+        <property name='artifact.size' value='311177'/>
+        <property name='download.size' value='311177'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.m2e.editor_1.8.3.20180227-2137.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.m2e.editor_1.8.3.20180227-2137.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.platform' version='4.7.3.v20180330-0640'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.platform_4.7.3.v20180330-0640/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.platform_4.7.3.v20180330-0640'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jpt.jpa.eclipselink.ui' version='2.4.101.v201803012210'>
+      <properties size='2'>
+        <property name='artifact.size' value='1124819'/>
+        <property name='download.size' value='1124819'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jpt.jpa.eclipselink.ui_2.4.101.v201803012210.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jpt.jpa.eclipselink.ui_2.4.101.v201803012210.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.recommenders.mylyn.rcp' version='2.5.2.v20180401-1226'>
+      <properties size='2'>
+        <property name='artifact.size' value='17995'/>
+        <property name='download.size' value='17995'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.recommenders.mylyn.rcp_2.5.2.v20180401-1226.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.recommenders.mylyn.rcp_2.5.2.v20180401-1226.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='ch.qos.logback.slf4j' version='1.1.2.v20160301-0943'>
+      <properties size='2'>
+        <property name='artifact.size' value='18597'/>
+        <property name='download.size' value='18597'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/ch.qos.logback.slf4j_1.1.2.v20160301-0943.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\ch.qos.logback.slf4j_1.1.2.v20160301-0943.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.recommenders.coordinates' version='2.5.2.v20180401-1226'>
+      <properties size='2'>
+        <property name='artifact.size' value='41911'/>
+        <property name='download.size' value='41911'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.recommenders.coordinates_2.5.2.v20180401-1226.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.recommenders.coordinates_2.5.2.v20180401-1226.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.jdt' version='3.13.4.v20180330-0919'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.jdt_3.13.4.v20180330-0919/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.jdt_3.13.4.v20180330-0919'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.jdt' version='1.8.3.20180227-2137'>
+      <properties size='2'>
+        <property name='artifact.size' value='125917'/>
+        <property name='download.size' value='125917'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.m2e.jdt_1.8.3.20180227-2137.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.m2e.jdt_1.8.3.20180227-2137.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jpt.jaxb.ui' version='1.5.101.v201803012210'>
+      <properties size='2'>
+        <property name='artifact.size' value='304858'/>
+        <property name='download.size' value='304858'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jpt.jaxb.ui_1.5.101.v201803012210.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jpt.jaxb.ui_1.5.101.v201803012210.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jpt.jaxb.eclipselink.core' version='1.3.201.v201803012210'>
+      <properties size='2'>
+        <property name='artifact.size' value='521438'/>
+        <property name='download.size' value='521438'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.jpt.jaxb.eclipselink.core_1.3.201.v201803012210.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.jpt.jaxb.eclipselink.core_1.3.201.v201803012210.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.remote.telnet.core' version='1.0.0.201803060126'>
+      <properties size='2'>
+        <property name='artifact.size' value='76184'/>
+        <property name='download.size' value='76184'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/plugins/org.eclipse.remote.telnet.core_1.0.0.201803060126.jar'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\plugins\org.eclipse.remote.telnet.core_1.0.0.201803060126.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.php.rdt.sync' version='5.3.0.201803070838'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/D:/Coding/Eclipse%20TFO/Info/Progs/eclipse/features/org.eclipse.php.rdt.sync_5.3.0.201803070838/'/>
+        <property name='file.name' value='D:\Coding\Eclipse TFO\Info\Progs\eclipse\features\org.eclipse.php.rdt.sync_5.3.0.201803070838'/>
+      </repositoryProperties>
+    </artifact>
+  </artifacts>
+</repository>

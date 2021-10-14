@@ -1,0 +1,83 @@
+import java.util.Arrays; 
+
+
+public class Kartentrick {
+
+	public static void main(String[] args) {
+		System.out.println("Kartentrick");
+		System.out.println("===========");
+		do {
+			int[][]karten = null;
+			karten = fuellen(karten, 0);
+			ausgeben(karten);
+			int spalte = readInt("Spalte der Karte: ");
+			
+			karten = fuellen(karten, spalte);
+			ausgeben(karten);
+			spalte = readInt("Spalte der Karte: ");
+			
+			karten = fuellen(karten, spalte);
+			ausgeben(karten);
+			spalte = readInt("Spalte der Karte: ");
+			
+			karten = fuellen(karten, spalte);
+			ausgeben(karten);
+			System.out.println("Karte " + karten[3][1] + " wurde gewählt");
+			
+			} while (Character.toLowerCase(
+			readChar("Nochmals (j/n)? ")) == 'j');
+	}
+	public static char readChar(String text) {
+	    System.out.print(text);
+	    return (new java.util.Scanner(System.in).next().charAt(0));
+	  }
+	public static int readInt(String text) {
+	    System.out.print(text);
+	    return (new java.util.Scanner(System.in)).nextInt();
+	  }
+	
+	public static void printZahl(int zahl) {
+		if (zahl < 10)
+			System.out.print("   " + zahl);
+		else
+			if (zahl < 100)
+				System.out.print("  " + zahl);
+			else
+				System.out.print(" " + zahl);
+	}
+	
+	public static int[][] fuellen(int[][]karten, int spalte) {
+		int[][] ret = null;
+		int n = 0;
+		//Array mit 7 zeilen und drei spalten
+		karten = new int[7][3];
+		//Gehe durch jede zeile
+		for (int i = 0; i < 7; i++) {
+			//Gehe durch jede spalte in zeile
+			for(int j = 0; j < 3; j++) {
+				if (j == 0) {
+					karten[i][j] = n+1;
+				} else if (j == 1) {
+					karten[i][j] = n+8;
+				} else if (j == 2) {
+					karten[i][j] = n+15;
+				}
+			}
+			n++;
+		}
+		
+		System.out.println("Array: " + Arrays.toString(karten[0]));
+		
+		ret = karten;
+		return ret;
+	}
+
+	public static void ausgeben(int[][]karten) {
+		for (int i = 0; i < 7; i++) {
+			for (int j = 0; j < 3; j++) {
+				printZahl(karten[i][j]);
+			}
+			System.out.println();
+		}
+	}
+}

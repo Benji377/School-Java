@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;leerAnzahl&apos; in &apos;FlexWeihnachtsbaum.main(...)&apos; to &apos;baumhohe&apos;&#x0D;&#x0A;- Original project: &apos;U03Variablen und Datentypen&apos;&#x0D;&#x0A;- Original element: &apos;FlexWeihnachtsbaum.main(String[]).leerAnzahl&apos;&#x0D;&#x0A;- Renamed element: &apos;leerAnzahl&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;leerAnzahl&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;{FlexWeihnachtsbaum.java[FlexWeihnachtsbaum~main~\[QString;@leerAnzahl!206!269!210!219!I!0!false" name="baumhohe" references="true" stamp="1605805188684" version="1.0"/>
+</session>

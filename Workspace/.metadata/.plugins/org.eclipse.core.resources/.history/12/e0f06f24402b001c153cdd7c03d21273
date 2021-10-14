@@ -1,0 +1,10 @@
+package net.tfobz.kurzeTest;
+
+public class KurzTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
