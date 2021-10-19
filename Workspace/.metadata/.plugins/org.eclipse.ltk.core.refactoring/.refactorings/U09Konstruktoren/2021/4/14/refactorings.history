@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Encapsulate field &apos;Kreis.radius&apos; in &apos;Kreis&apos;&#x0D;&#x0A;- Original project: &apos;U09Konstruktoren&apos;&#x0D;&#x0A;- Original element: &apos;Kreis.radius&apos;&#x0D;&#x0A;- Getter method name: &apos;getRadius&apos;&#x0D;&#x0A;- Setter method name: &apos;setRadius&apos;&#x0D;&#x0A;- Field visibility: &apos;public&apos;&#x0D;&#x0A;- Use getter and setter methods in declaring type" comments="false" declaring="true" description="Encapsulate field &apos;radius&apos;" flags="589830" getter="getRadius" id="org.eclipse.jdt.ui.self.encapsulate" input="/src&lt;{Kreis.java[Kreis^radius" insertion="-1" setter="setRadius" stamp="1617385116968" version="1.0" visibility="1"/>
-</session>

@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename package &apos;kurze&apos; to &apos;net.tfobz.kurzeTest&apos;&#x0A;- Original project: &apos;U15GUIProgrammierungSwing&apos;&#x0A;- Original element: &apos;U15GUIProgrammierungSwing/src/kurze&apos;&#x0A;- Renamed element: &apos;U15GUIProgrammierungSwing/src/net.tfobz.kurzeTest&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;kurze&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;kurze" name="net.tfobz.kurzeTest" qualified="false" references="true" stamp="1634031384389" textual="false" version="1.0"/>
-</session>

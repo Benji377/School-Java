@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Copy element &apos;TicTacToe.java&apos; to &apos;U14NetzwerkprogrammierungExceptions/src/net.tfobz.tictactoe&apos;&#x0A;- Original project: &apos;U13PackagesArchiveAnwendungen&apos;&#x0A;- Destination element: &apos;U14NetzwerkprogrammierungExceptions/src/net.tfobz.tictactoe&apos;&#x0A;- Original element: &apos;net.tfobz.tictactoe.TicTacToe.java&apos;" description="Copy compilation unit" destination="=U14NetzwerkprogrammierungExceptions/src&lt;net.tfobz.tictactoe" element1="/src&lt;net.tfobz.tictactoe{TicTacToe.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1632724034934" units="1" version="1.0"/>
-</session>
