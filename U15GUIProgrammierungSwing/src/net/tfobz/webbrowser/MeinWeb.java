@@ -60,7 +60,7 @@ public class MeinWeb extends JFrame {
 				// EMPTY
 			}
 		});
-		// Knopf zum ausfÃ¼hren der Eingabe
+		// Knopf zum ausführen der Eingabe
 		this.confirm_button = new JButton();
 		this.confirm_button.setBounds(screen_width-53, 10, 50, 30);
 		this.confirm_button.setText("->");
