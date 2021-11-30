@@ -3,8 +3,12 @@ package net.tfobz.lernkartei.frontend;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
 
 import javax.swing.*;
+
+import net.tfobz.lernkartei.backend.VokabeltrainerDB;
 
 public class Hauptmenu extends JFrame{
 	private JLabel titel;
@@ -55,6 +59,17 @@ public class Hauptmenu extends JFrame{
 		this.sprachen.setFont(new Font("Balsamiq Sans", Font.PLAIN, 24));
 		this.sprachen.setEditable(false);
 		this.sprachen.addItem("Sprachen");
+		this.sprachen.addItem("Deutsch-Italienisch");
+		this.sprachen.addItemListener(new ItemListener() {
+			
+			@Override
+			public void itemStateChanged(ItemEvent e) {
+				if (e.getStateChange() == e.SELECTED) {
+					System.out.println("AAA: " + sprachen.getSelectedIndex());
+					VokabeltrainerDB.getLernkartei(sprachen.getSelectedIndex());
+				}
+			}
+		});
 		
 		this.credits = new JLabel("Created by Mick Christian and Demetz Benjamin");
 		this.credits.setBounds(190, 430, 290, 21);
