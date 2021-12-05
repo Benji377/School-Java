@@ -36,12 +36,15 @@ public class KarteGUI extends JFrame {
 		menu.setFont(new Font("Balsamiq Sans", Font.BOLD, 13));
 		
 		vokabel = new JLabel();
-		vokabel.setBounds(120, 67, 258, 68);
-		vokabel.setFont(new Font("Balsamiq Sans", Font.BOLD, 60));
+		vokabel.setBounds(10, 67, 490, 68);
+		vokabel.setFont(new Font("Balsamiq Sans", Font.BOLD, 50));
+		vokabel.setHorizontalAlignment(SwingConstants.CENTER);
 		
 		losung = new JLabel();
-		losung.setBounds(128, 163, 242, 36);
+		losung.setBounds(10, 163, 490, 36);
 		losung.setFont(new Font("Balsamiq Sans", Font.BOLD, 28));
+		losung.setHorizontalAlignment(SwingConstants.CENTER);
+		losung.setVisible(false);
 		
 		if (karte.getRichtung()) {
 			vokabel.setText(karte.getWortEins());
@@ -53,25 +56,25 @@ public class KarteGUI extends JFrame {
 		
 		input = new JTextField();
 		input.setBounds(73, 230, 353, 70);
-		input.setFont(new Font("Balsamiq Sans", Font.BOLD, 13));
+		input.setFont(new Font("Balsamiq Sans", Font.BOLD, 28));
 		
 		grosklein = new JCheckBox("Groﬂ/Kleinschreibung");
-		grosklein.setBounds(16, 363, 199, 28);
+		grosklein.setBounds(30, 365, 220, 30);
 		grosklein.setFont(new Font("Balsamiq Sans", Font.BOLD, 18));
 		grosklein.setSelected(karte.getGrossKleinschreibung());
-		grosklein.addChangeListener(new ChangeListener() {
+		grosklein.addActionListener(new ActionListener() {
 			
 			@Override
-			public void stateChanged(ChangeEvent e) {
+			public void actionPerformed(ActionEvent e) {
+				System.out.println("1. "+karte.toString());
 				Karte gKarte = new Karte(karte.getNummer(), karte.getWortEins(), karte.getWortZwei(), karte.getRichtung(), grosklein.isSelected());
 				karte = gKarte;
-				validate();
-				repaint();
+				System.out.println("2. "+karte.toString());
 			}
 		});
 		
 		backward = new JButton("<<");
-		backward.setBounds(48, 407, 64, 36);
+		backward.setBounds(30, 410, 70, 35);
 		backward.setFont(new Font("Balsamiq Sans", Font.BOLD, 28));
 		backward.addActionListener(new ActionListener() {
 			
@@ -89,24 +92,27 @@ public class KarteGUI extends JFrame {
 		});
 		
 		solution = new JButton("Lˆsung anzeigen");
-		solution.setBounds(145, 409, 210, 32);
+		solution.setBounds(110, 410, 280, 35);
 		solution.setFont(new Font("Balsamiq Sans", Font.BOLD, 24));
 		solution.addActionListener(new ActionListener() {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
+				losung.setVisible(true);
 				if (k.getRichtig(input.getText())) {
 					VokabeltrainerDB.setKarteRichtig(karte);
-					setBackground(Color.GREEN);
+					getContentPane().setBackground(Color.GREEN);
+					grosklein.setBackground(Color.GREEN);
 				} else {
 					VokabeltrainerDB.setKarteFalsch(karte);
-					setBackground(Color.RED);
+					getContentPane().setBackground(Color.RED);
+					grosklein.setBackground(Color.RED);
 				}
 			}
 		});
 		
 		forward = new JButton(">>");
-		forward.setBounds(394, 407, 67, 36);
+		forward.setBounds(400, 410, 70, 35);
 		forward.setFont(new Font("Balsamiq Sans", Font.BOLD, 28));
 		forward.addActionListener(new ActionListener() {
 			
