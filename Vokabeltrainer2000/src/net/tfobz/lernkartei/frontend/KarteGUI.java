@@ -23,7 +23,7 @@ public class KarteGUI extends JFrame {
 	private JTextField input;
 	private Karte karte;
 	
-	// Balsamiq Koordinaten: X: 412 Y: 66
+	
 	public KarteGUI(JFrame owner, Karte k) {
 		this.setTitle("Vokabel");
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -31,21 +31,33 @@ public class KarteGUI extends JFrame {
 		this.setResizable(false);
 		this.karte = k;
 		
+		// Knopf der es ermöglicht zum Menü zurückzukehren
 		menu = new JButton("Zum Menü");
 		menu.setBounds(16, 17, 105, 27);
 		menu.setFont(new Font("Balsamiq Sans", Font.BOLD, 13));
+		menu.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				owner.setVisible(true);
+				setVisible(false);
+			}
+		});
 		
+		// Enthält das Wort, dass der Benutzer übersetzen muss
 		vokabel = new JLabel();
 		vokabel.setBounds(10, 67, 490, 68);
 		vokabel.setFont(new Font("Balsamiq Sans", Font.BOLD, 50));
 		vokabel.setHorizontalAlignment(SwingConstants.CENTER);
 		
+		// Enthält die Lösung. Ist am Anfang natürlich ausgeblendet
 		losung = new JLabel();
 		losung.setBounds(10, 163, 490, 36);
 		losung.setFont(new Font("Balsamiq Sans", Font.BOLD, 28));
 		losung.setHorizontalAlignment(SwingConstants.CENTER);
 		losung.setVisible(false);
 		
+		// Je nach Richtung werden hier die Wörter gesetzt
 		if (karte.getRichtung()) {
 			vokabel.setText(karte.getWortEins());
 			losung.setText(karte.getWortZwei());
@@ -54,10 +66,12 @@ public class KarteGUI extends JFrame {
 			losung.setText(karte.getWortEins());
 		}
 		
+		// Hier kann der Benutzer sein Lösungsvorschlag eingeben
 		input = new JTextField();
 		input.setBounds(73, 230, 353, 70);
 		input.setFont(new Font("Balsamiq Sans", Font.BOLD, 28));
 		
+		// Hier kann der Benutzer den Groß/Kleinschreiben aktivieren
 		grosklein = new JCheckBox("Groß/Kleinschreibung");
 		grosklein.setBounds(30, 365, 220, 30);
 		grosklein.setFont(new Font("Balsamiq Sans", Font.BOLD, 18));
@@ -66,13 +80,13 @@ public class KarteGUI extends JFrame {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				System.out.println("1. "+karte.toString());
+				// Da das Backend dies nicht erlaubt, musste die gesamte Karte nue gemacht werden um es zu ermöglichen
+				// Klasse Karte hat kein setGroßKleinschreiben Methode
 				Karte gKarte = new Karte(karte.getNummer(), karte.getWortEins(), karte.getWortZwei(), karte.getRichtung(), grosklein.isSelected());
 				karte = gKarte;
-				System.out.println("2. "+karte.toString());
 			}
 		});
-		
+		// Erlaubt es die vorherige Karte anzusehen
 		backward = new JButton("<<");
 		backward.setBounds(30, 410, 70, 35);
 		backward.setFont(new Font("Balsamiq Sans", Font.BOLD, 28));
@@ -80,7 +94,9 @@ public class KarteGUI extends JFrame {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
+				// Benutzt den Index um vor und zurück zu gehen
 				Karte kback = VokabeltrainerDB.getKarte(karte.getNummer()-1);
+				// Kontrolliert dass es überhaupt eine Karte davor gibt
 				if (kback != null) {
 					karte = kback;
 					validate();
@@ -90,7 +106,7 @@ public class KarteGUI extends JFrame {
 				}
 			}
 		});
-		
+		// Knopf um die Lösung anzuzeigen und kontrollieren ob der Benutzer richtig erraten hat
 		solution = new JButton("Lösung anzeigen");
 		solution.setBounds(110, 410, 280, 35);
 		solution.setFont(new Font("Balsamiq Sans", Font.BOLD, 24));
@@ -98,7 +114,9 @@ public class KarteGUI extends JFrame {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
+				// Lösung wird sichtbar
 				losung.setVisible(true);
+				// Je nach Richtigkeit wird auch die Farbe verändert
 				if (k.getRichtig(input.getText())) {
 					VokabeltrainerDB.setKarteRichtig(karte);
 					getContentPane().setBackground(Color.GREEN);
@@ -110,7 +128,7 @@ public class KarteGUI extends JFrame {
 				}
 			}
 		});
-		
+		// Ermöglicht es dem Benutzer eine Karte weiterzugehen
 		forward = new JButton(">>");
 		forward.setBounds(400, 410, 70, 35);
 		forward.setFont(new Font("Balsamiq Sans", Font.BOLD, 28));
