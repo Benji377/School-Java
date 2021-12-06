@@ -3,29 +3,36 @@ package net.tfobz.lernkartei.frontend;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
+import java.util.InputMismatchException;
+
 import javax.swing.*;
 import net.tfobz.lernkartei.backend.Karte;
+import net.tfobz.lernkartei.backend.Lernkartei;
+import net.tfobz.lernkartei.backend.VokabeltrainerDB;
 
 // Icons from: https://www.freepik.com/
-public class Hauptmenu extends JFrame{
+public class Hauptmenu extends JFrame {
 	private JLabel titel;
 	private JLabel credits;
 	private JComboBox<String> sprachen;
 	private JButton einstellungen;
 	private ImageIcon front;
 	private JLabel front_carrier;
-	// Berechnet die Position um das JFrame genau in der Mitte des Bildschirm auszugeben
+	// Berechnet die Position um das JFrame genau in der Mitte des Bildschirm
+	// auszugeben
 	int y = (int) Toolkit.getDefaultToolkit().getScreenSize().getHeight() / 2 - 250;
 	int x = (int) Toolkit.getDefaultToolkit().getScreenSize().getWidth() / 2 - 250;
 	private JButton kartenedit;
 	private JButton sprachedit;
 	private JButton lernen;
-	
+	private ArrayList<Lernkartei> sprachenliste;
+
 	public static void main(String[] args) {
 		Hauptmenu h = new Hauptmenu();
 		h.setVisible(true);
 	}
-	
+
 	// Balsamiq Koordinaten: X: 412 Y: 66
 	public Hauptmenu() {
 		this.setTitle("Vokabeltrainer2000");
@@ -51,14 +58,22 @@ public class Hauptmenu extends JFrame{
 		this.titel = new JLabel("Vokabeltrainer2000");
 		this.titel.setBounds(67, 70, 372, 48);
 		this.titel.setFont(new Font("Balsamiq Sans", Font.BOLD, 40));
+		sprachenliste = new ArrayList<Lernkartei>();
+		sprachenliste = (ArrayList<Lernkartei>) VokabeltrainerDB.getLernkarteien();
+		
 		
 		// Enthält die Auswahl an allen möglichen Lernkarteien
 		this.sprachen = new JComboBox<String>();
 		this.sprachen.setBounds(64, 150, 372, 38);
 		this.sprachen.setFont(new Font("Balsamiq Sans", Font.PLAIN, 24));
 		this.sprachen.setEditable(false);
+		
 		// TODO: Hole liste an Lernkarteien von DB
 		this.sprachen.addItem("Sprachen");
+		for(int i = 0;sprachenliste.size()>i;i++) {
+			sprachen.addItem(sprachenliste.get(i).getWortEinsBeschreibung()+" - "+sprachenliste.get(i).getWortZweiBeschreibung());
+			sprachen.addItem(sprachenliste.get(i).getWortZweiBeschreibung()+" - "+sprachenliste.get(i).getWortEinsBeschreibung());
+	    }
 		
 		this.credits = new JLabel("Created by Mick Christian and Demetz Benjamin");
 		this.credits.setBounds(190, 430, 290, 21);
@@ -70,7 +85,33 @@ public class Hauptmenu extends JFrame{
 		kartenedit.setFont(new Font("Balsamiq Sans", Font.PLAIN, 16));
 		kartenedit.setHorizontalAlignment(SwingConstants.CENTER);
 		kartenedit.setBounds(304, 294, 180, 40);
-		// TODO: Add Actionlistener
+		kartenedit.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				int nummer = sprachen.getSelectedIndex();
+				int auswahl = 0;
+				System.out.println("NUUU: " + nummer);
+				try {
+					if(nummer != 0) {
+						if (nummer % 2 == 0) {
+							auswahl = nummer / 2;
+						} else {
+							auswahl = (nummer + 1) / 2;
+						}
+						System.out.println("AAAA: " + auswahl);
+						Kartenliste k =  new Kartenliste(Hauptmenu.this,auswahl);
+						k.setVisible(true);
+						setVisible(false);
+					}else {
+						throw new InputMismatchException("Sie sollen eine Sprache aussuchen");
+					}
+				}catch(InputMismatchException e1) {
+					JOptionPane.showMessageDialog(Hauptmenu.this, e1.getMessage(), "Fehler",
+						JOptionPane.ERROR_MESSAGE);
+				}
+			}
+		});
 		
 		// Knopf der eine Liste von Lernkarteien anzeigt und diese bearbeiten lässt
 		sprachedit = new JButton("Sprachen bearbeiten");
@@ -103,7 +144,6 @@ public class Hauptmenu extends JFrame{
 		c.add(this.sprachen);
 		c.add(this.einstellungen);
 		c.add(this.credits);
-		c.add(this.front_carrier);
 		c.add(this.sprachedit);
 		c.add(this.kartenedit);
 		c.add(this.lernen);

@@ -1,20 +1,21 @@
+
 package net.tfobz.lernkartei.frontend;
+
 import java.awt.*;
-import java.awt.event.ActionEvent;
 import java.awt.event.*;
 import java.io.*;
+import java.util.ArrayList;
 import java.util.InputMismatchException;
+import java.util.List;
 
 import javax.swing.*;
-import net.sourceforge.jdatepicker.impl.JDatePanelImpl;
-import net.sourceforge.jdatepicker.impl.JDatePickerImpl;
-import net.sourceforge.jdatepicker.impl.UtilDateModel;
+import net.tfobz.lernkartei.backend.Lernkartei;
 import net.tfobz.lernkartei.backend.VokabeltrainerDB;
 
-public class Einstellungen extends JFrame{
+public class Einstellungen extends JFrame {
+
 	private JLabel titel1;
 	private JLabel titel2;
-	private JLabel sprache;
 
 	private ImageIcon iimport;
 	private ImageIcon iexport;
@@ -28,11 +29,17 @@ public class Einstellungen extends JFrame{
 	private JFileChooser chooser;
 	private File file;
 
-	//-66,-412
-	//private JDataChooser c;
+	private JPanel panel;
+	private JScrollPane scroll;
+	private List<Lernkartei> sprachen;
+	private JLabel[] lsprache;
+	private JButton[] bsprache;
+
+	// -66,-412
+	// private JDataChooser c;
 	public Einstellungen(JFrame owner) {
 
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		this.setBounds(owner.getX(),owner.getY(),500,500);
 		this.setTitle("Vokabeltrainer: Einstellungen");
 		this.setResizable(false);
@@ -70,7 +77,9 @@ public class Einstellungen extends JFrame{
 					int nummer = isprache.getSelectedIndex();
 					if(nummer != 0) {
 						chooser = new JFileChooser();
-						int value = chooser.showOpenDialog(Einstellungen.this);
+
+
+						chooser.showOpenDialog(Einstellungen.this);
 						file = chooser.getSelectedFile();
 						VokabeltrainerDB.importierenKarten(nummer, file.getAbsolutePath());
 
@@ -87,13 +96,18 @@ public class Einstellungen extends JFrame{
 
 			}
 		});
+		sprachen = new ArrayList<Lernkartei>();
+		sprachen = VokabeltrainerDB.getLernkarteien();
 
 		isprache = new JComboBox<String>();
 		isprache.setBounds(212,85,156,30);
 		isprache.setFont(new Font("Balsamiq Sans", Font.PLAIN, 16));
 		isprache.setEditable(false);
 		isprache.addItem("Sprache");
-		isprache.addItem("Deutsch-Italienisch");
+		for(int i = 0;sprachen.size()>i;i++) {
+			isprache.addItem(sprachen.get(i).getWortEinsBeschreibung()+" - "+sprachen.get(i).getWortZweiBeschreibung());
+		}
+
 
 		bexport = new JButton("Export");
 		bexport.setFont(new Font("Balsamiq Sans",Font.PLAIN,20));
@@ -109,8 +123,7 @@ public class Einstellungen extends JFrame{
 					if(nummer != 0) {
 						chooser = new JFileChooser();
 						chooser.showSaveDialog(Einstellungen.this);
-						System.out.println(check.isSelected());
-						VokabeltrainerDB.exportierenKarten(nummer, chooser.getSelectedFile().getAbsolutePath(),check.isSelected());  
+						VokabeltrainerDB.exportierenKarten(nummer, chooser.getSelectedFile().getAbsolutePath(),check.isSelected());	
 					}
 					else {
 						throw new InputMismatchException("Sie sollen eine Sprache aussuchen");
@@ -128,7 +141,9 @@ public class Einstellungen extends JFrame{
 		esprache.setFont(new Font("Balsamiq Sans", Font.PLAIN, 16));
 		esprache.setEditable(false);
 		esprache.addItem("Sprache");
-		esprache.addItem("Deutsch-Italienisch");
+		for(int i = 0;sprachen.size()>i;i++) {
+			esprache.addItem(sprachen.get(i).getWortEinsBeschreibung()+" - "+sprachen.get(i).getWortZweiBeschreibung());
+		}
 
 
 		check = new JCheckBox();
@@ -143,14 +158,60 @@ public class Einstellungen extends JFrame{
 		titel2.setFont(new Font("Balsamiq Sans",Font.PLAIN,32));
 		titel2.setBounds(116,208,268,36);
 
-		sprache = new JLabel("Deutsch-Italienisch");
-		sprache.setFont(new Font("Balsamiq Sans",Font.PLAIN,16));
-		sprache.setBounds(27,274,150,24);
+		//    UtilDateModel model = new UtilDateModel();
+		//    JDatePanelImpl datePanel = new JDatePanelImpl(model);
+		//    JDatePickerImpl datePicker = new JDatePickerImpl(datePanel);
+		//    datePicker.setBounds(250,273,200,25);
+		this.addWindowListener(new WindowAdapter() {
+			
+			@Override
+			public void windowClosing(WindowEvent e) {
+				owner.setVisible(true);
+			}
+		});
 
-		UtilDateModel model = new UtilDateModel();
-		JDatePanelImpl datePanel = new JDatePanelImpl(model);
-		JDatePickerImpl datePicker = new JDatePickerImpl(datePanel);
-		datePicker.setBounds(250,273,200,25);
+		int size = sprachen.size();
+
+		panel = new JPanel();
+		panel.setLayout(new GridLayout(size,2));
+		scroll = new JScrollPane(panel);
+		scroll.setBounds(27,284,441,150);
+		scroll.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
+		lsprache = new JLabel[size];
+		bsprache = new JButton[size];
+		int hohe = 266;
+
+
+
+		for(int i = 0;i<size;i++) {
+			Lernkartei l = sprachen.get(i);
+			lsprache[i] = new JLabel(l.getWortEinsBeschreibung()+" - "+l.getWortZweiBeschreibung());
+			lsprache[i].setFont(new Font("Balsamiq Sans", Font.PLAIN, 16));
+			lsprache[i].setBounds(27,hohe+34,290,25);
+
+			bsprache[i] = new JButton("Datum einstellen");
+			bsprache[i].setFont(new Font("Balsamiq Sans", Font.PLAIN, 16));
+			bsprache[i].setBounds(317,hohe+34,130,25);
+			final int x = i+1;
+			bsprache[i].addActionListener(new ActionListener() {
+
+				@Override
+				public void actionPerformed(ActionEvent e) {
+					Fachliste f = new Fachliste(Einstellungen.this,x);
+					f.setVisible(true);
+					setVisible(false);
+
+
+				}
+			});
+
+			panel.add(lsprache[i]);
+			panel.add(bsprache[i]);
+
+			hohe+=34;
+		}
+
+
 
 		Container c = this.getContentPane();
 		c.setLayout(null);
@@ -160,11 +221,11 @@ public class Einstellungen extends JFrame{
 		c.add(bexport);
 		c.add(s);
 		c.add(titel2);
-		c.add(sprache);
-		c.add(datePicker);
+		//    c.add(datePicker);
 		c.add(esprache);
 		c.add(isprache);
 		c.add(check);
+		c.add(scroll);
 
 	}
 

@@ -60,7 +60,7 @@ public class Fachliste extends JFrame{
 					VokabeltrainerDB.loeschenAlleFaecher(nummerLernkartei);
 					facherListe = VokabeltrainerDB.getFaecher(nummerLernkartei);
 					// Fenster wird neu geladen
-					validate();
+					revalidate();
 					repaint();
 				}
 			}
@@ -85,8 +85,13 @@ public class Fachliste extends JFrame{
 					f = new Fach(facherListe.size(), "Fach", Integer.parseInt(inp), new Date());
 				else
 					f = new Fach(facherListe.size(), "Fach", 100, new Date());
+				System.out.println(facherListe.size());
 				VokabeltrainerDB.hinzufuegenFach(nummerLernkartei, f);
-				validate();
+				facherListe.add(f);
+				// TODO: Fix this! Fach not speichert
+				//facherListe = VokabeltrainerDB.getFaecher(nummerLernkartei);
+				System.out.println(facherListe.size());
+				revalidate();
 				repaint();
 			}
 		});

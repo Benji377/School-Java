@@ -80,7 +80,7 @@ public class KarteGUI extends JFrame {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				// Da das Backend dies nicht erlaubt, musste die gesamte Karte nue gemacht werden um es zu ermöglichen
+				// Da das Backend dies nicht erlaubt, musste die gesamte Karte neu gemacht werden um es zu ermöglichen
 				// Klasse Karte hat kein setGroßKleinschreiben Methode
 				Karte gKarte = new Karte(karte.getNummer(), karte.getWortEins(), karte.getWortZwei(), karte.getRichtung(), grosklein.isSelected());
 				karte = gKarte;
@@ -99,7 +99,7 @@ public class KarteGUI extends JFrame {
 				// Kontrolliert dass es überhaupt eine Karte davor gibt
 				if (kback != null) {
 					karte = kback;
-					validate();
+					revalidate();
 					repaint();
 				} else {
 					JOptionPane.showMessageDialog(KarteGUI.this, "Man kann nicht weiter zurück gehen");
@@ -139,7 +139,7 @@ public class KarteGUI extends JFrame {
 				Karte kfront = VokabeltrainerDB.getKarte(karte.getNummer()+1);
 				if (kfront != null) {
 					karte = kfront;
-					validate();
+					revalidate();
 					repaint();
 				} else {
 					JOptionPane.showMessageDialog(KarteGUI.this, "Man kann nicht weiter vor gehen");

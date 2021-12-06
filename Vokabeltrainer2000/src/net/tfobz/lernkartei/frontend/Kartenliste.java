@@ -47,26 +47,36 @@ public class Kartenliste extends JFrame{
 		edit.setIcon(icob);
 		edit.setFont(new Font("Balsamiq Sans", Font.PLAIN, 13));
 		edit.setBounds(385, 10, 45, 45);
+		edit.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				JRadioButton selected = (JRadioButton) radioGroup.getSelection();
+			}
+		});
 		
 		ImageIcon icom = new ImageIcon("./images/trash.png");
 		delete = new JButton();
 		delete.setIcon(icom);
 		delete.setFont(new Font("Balsamiq Sans", Font.PLAIN, 13));
 		delete.setBounds(439, 10, 45, 45);
+		// TODO: Add Actionlistener
 		
 		ImageIcon icon = new ImageIcon("./images/add.png");
 		add = new JButton();
 		add.setIcon(icon);
 		add.setFont(new Font("Balsamiq Sans", Font.PLAIN, 13));
 		add.setBounds(331, 10, 45, 45);
+		// TODO: Add Actionlistener
 		
-		title = new JLabel("Erinnerungsdatum für Fächer");
+		title = new JLabel("Wählen Sie eine Karte aus");
 		title.setFont(new Font("Balsamiq Sans", Font.PLAIN, 24));
 		title.setHorizontalAlignment(SwingConstants.CENTER);
 		title.setBounds(10, 80, 474, 32);
 		
 		int fachcount = VokabeltrainerDB.getFaecher(nummerLernkartei).size();
-		SpinnerModel model = new SpinnerNumberModel(0, 0, fachcount, 1);
+		//System.out.println(fachcount);
+		SpinnerModel model = new SpinnerNumberModel(1, 1, fachcount+1, 1);
 		spinn = new JSpinner(model);
 		spinn.setBounds(82, 123, 46, 24);
 		spinn.setFont(new Font("Balsamiq Sans", Font.PLAIN, 13));
@@ -81,18 +91,19 @@ public class Kartenliste extends JFrame{
 		scrollPane.setBounds(32, 150, 436, 320);
 		scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
 		
-		kartenListe = VokabeltrainerDB.getKarten((int) spinn.getValue());
-		karten = new JRadioButton[kartenListe.size()];
-		
 		radioGroup = new ButtonGroup();
-		
-		for (int i = 0; i < kartenListe.size(); i++) {
-			Karte k = kartenListe.get(i);
-			karten[i] = new JRadioButton(k.getNummer() + ". " + k.getWortEins() + " - " + k.getWortZwei());
-			karten[i].setFont(new Font("Balsamiq Sans", Font.PLAIN, 20));
-			karten[i].setSize(435, 28);
-			radioGroup.add(karten[i]);
-			kartencontent.add(karten[i]);
+		kartenListe = VokabeltrainerDB.getKarten((int) spinn.getValue());
+		if (kartenListe != null) {
+			karten = new JRadioButton[kartenListe.size()];
+			
+			for (int i = 0; i < kartenListe.size(); i++) {
+				Karte k = kartenListe.get(i);
+				karten[i] = new JRadioButton(k.getNummer() + ". " + k.getWortEins() + " - " + k.getWortZwei());
+				karten[i].setFont(new Font("Balsamiq Sans", Font.PLAIN, 20));
+				karten[i].setSize(435, 28);
+				radioGroup.add(karten[i]);
+				kartencontent.add(karten[i]);
+			}
 		}
 		
 		Container c = this.getContentPane();
