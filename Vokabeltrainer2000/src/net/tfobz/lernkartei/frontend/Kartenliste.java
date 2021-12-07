@@ -4,6 +4,7 @@ import java.awt.Container;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Enumeration;
 import java.util.List;
 import javax.swing.*;
 
@@ -51,7 +52,17 @@ public class Kartenliste extends JFrame{
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				JRadioButton selected = (JRadioButton) radioGroup.getSelection();
+				// Credits: https://stackoverflow.com/a/13232816
+				for (Enumeration<AbstractButton> buttons = radioGroup.getElements(); buttons.hasMoreElements();) {
+					AbstractButton button = buttons.nextElement();
+					
+					if (button.isSelected()) {
+						String stext = button.getText().replaceAll("(\\d+).+", "$1");
+						Karte kk = kartenListe.get(Integer.parseInt(stext)-1);
+						KartenBearbeiten kb = new KartenBearbeiten(Kartenliste.this, kk);
+						kb.setVisible(true);
+					}
+				}
 			}
 		});
 		
@@ -92,6 +103,21 @@ public class Kartenliste extends JFrame{
 		scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
 		
 		radioGroup = new ButtonGroup();
+		addComponent();
+		
+		Container c = this.getContentPane();
+		c.setLayout(null);
+		c.add(this.back);
+		c.add(this.add);
+		c.add(this.delete);
+		c.add(this.edit);
+		c.add(this.title);
+		c.add(this.spinn);
+		c.add(this.spinninfo);
+		c.add(this.scrollPane);
+	}
+	
+	private void addComponent() {
 		kartenListe = VokabeltrainerDB.getKarten((int) spinn.getValue());
 		if (kartenListe != null) {
 			karten = new JRadioButton[kartenListe.size()];
@@ -105,17 +131,6 @@ public class Kartenliste extends JFrame{
 				kartencontent.add(karten[i]);
 			}
 		}
-		
-		Container c = this.getContentPane();
-		c.setLayout(null);
-		c.add(this.back);
-		c.add(this.add);
-		c.add(this.delete);
-		c.add(this.edit);
-		c.add(this.title);
-		c.add(this.spinn);
-		c.add(this.spinninfo);
-		c.add(this.scrollPane);
 	}
 
 }

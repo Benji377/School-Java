@@ -53,15 +53,14 @@ public class Fachliste extends JFrame{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// Warnmeldung
-				int option = JOptionPane.showConfirmDialog(Fachliste.this, "Achtung! Sie sind dabei alle Fächer und die Karten darin zu lösschen \n"
+				int option = JOptionPane.showConfirmDialog(Fachliste.this, "Achtung! Sie sind dabei alle Fächer und die Karten darin zu löschen \n"
 						+ "Diese Aktion kann nicht rückgängig gemacht werden.");
 				// Nur wenn auf Ja geklickt wird, werden alle gelöscht
 				if (option == JOptionPane.YES_OPTION) {
 					VokabeltrainerDB.loeschenAlleFaecher(nummerLernkartei);
 					facherListe = VokabeltrainerDB.getFaecher(nummerLernkartei);
 					// Fenster wird neu geladen
-					revalidate();
-					repaint();
+					addContent(nummerLernkartei);
 				}
 			}
 		});
@@ -82,17 +81,11 @@ public class Fachliste extends JFrame{
 				// Wenn die Eingabe gültig ist wird ein neues Fach angelegt
 				// Ansonsten wird standardmäßig 100 Tage verwendet
 				if (inp != null && inp.length() > 0)
-					f = new Fach(facherListe.size(), "Fach", Integer.parseInt(inp), new Date());
+					f = new Fach(-1, null, Integer.parseInt(inp), null);
 				else
-					f = new Fach(facherListe.size(), "Fach", 100, new Date());
-				System.out.println(facherListe.size());
+					f = new Fach(-1, null, 0, null);
 				VokabeltrainerDB.hinzufuegenFach(nummerLernkartei, f);
-				facherListe.add(f);
-				// TODO: Fix this! Fach not speichert
-				//facherListe = VokabeltrainerDB.getFaecher(nummerLernkartei);
-				System.out.println(facherListe.size());
-				revalidate();
-				repaint();
+				addContent(nummerLernkartei);
 			}
 		});
 		
@@ -106,19 +99,32 @@ public class Fachliste extends JFrame{
 		// Layout um es untereinander anzureihen
 		fachcontent.setLayout(new BoxLayout(fachcontent, BoxLayout.Y_AXIS));
 		scrollPane = new JScrollPane(fachcontent);
-		scrollPane.setBounds(32, 142, 436, 320);
+		scrollPane.setBounds(10, 142, 480, 320);
 		scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
 		
+		this.addContent(nummerLernkartei);
+		
+		Container c = this.getContentPane();
+		c.setLayout(null);
+		c.add(this.back);
+		c.add(this.add);
+		c.add(this.delete);
+		c.add(this.title);
+		c.add(this.scrollPane);
+	}
+	
+	private void addContent(int nummerLernkartei) {
+		fachcontent.removeAll();
 		// Holt eine Liste aller Fächer aus dem Database
 		facherListe = VokabeltrainerDB.getFaecher(nummerLernkartei);
 		facher = new JLabel[facherListe.size()];
-		
 		// Für jedes Fach in der Liste wird ein Jlable erstellt und diese auf dem Scrollpane gesetzt
 		for (int i = 0; i < facherListe.size(); i++) {
 			Fach f = facherListe.get(i);
-			facher[i] = new JLabel(f.getNummer() + ". " + f.getBeschreibung() + ": Erinnerung in " + f.getErinnerungsIntervall() + " Tag(e)");
+			facher[i] = new JLabel(i+1 + ". Fach (" + f.getGelerntAmEuropaeischString()+ ")" + " |  Intervall: " + f.getErinnerungsIntervall() + " Tag(e)");
 			facher[i].setFont(new Font("Balsamiq Sans", Font.PLAIN, 20));
 			facher[i].setSize(435, 28);
+			facher[i].setToolTipText("Click drauf um das Intervall zu ändern");
 			// Dies ermöglicht es beim Klicken auf einem Fach das Intervall zu ändern
 			facher[i].addMouseListener(new MouseAdapter() {
 				
@@ -130,27 +136,26 @@ public class Fachliste extends JFrame{
 					String inde = jl.getText().replaceAll("(\\d+).+", "$1");
 					// Dann wird der Benutzer nach einem neuen Intervall gefragt
 					String inp = JOptionPane.showInputDialog("Neue Erinnerungsintervall eingeben: ");
+					// Nun nehmen wir die Liste mit allen Fächer aus dem Databse
+					List<Fach> listenf = VokabeltrainerDB.getFaecher(nummerLernkartei);
 					// Es wird nach der Gültigkeit des Intervalls kontrolliert
 					if (inp != null && inp.length() > 0) {
 						int num = Integer.parseInt(inp);
 						if (num > 0) {
 							// Wenn alles richtig ist wird ein neues Fach angelegt mit dem neuen Intervall
-							Fach f = new Fach(Integer.parseInt(inde), "Fach", num, new Date());
-							VokabeltrainerDB.aendernFach(f);
+							// Diese Fach wird mittels dem ermitteltne Index aus der Liste geholt
+							Fach newF = listenf.get(Integer.parseInt(inde)-1);
+							newF.setErinnerungsIntervall(num);
+							VokabeltrainerDB.aendernFach(newF);
 						}
 					}
+					addContent(nummerLernkartei);
 				}
 			});
 			fachcontent.add(facher[i]);
 		}
-		
-		Container c = this.getContentPane();
-		c.setLayout(null);
-		c.add(this.back);
-		c.add(this.add);
-		c.add(this.delete);
-		c.add(this.title);
-		c.add(this.scrollPane);
+		revalidate();
+		repaint();
 	}
 
 }
