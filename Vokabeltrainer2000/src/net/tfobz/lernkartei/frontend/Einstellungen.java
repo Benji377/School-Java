@@ -2,6 +2,7 @@
 package net.tfobz.lernkartei.frontend;
 
 import java.awt.*;
+import java.awt.event.ActionEvent;
 import java.awt.event.*;
 import java.io.*;
 import java.util.ArrayList;
@@ -9,8 +10,7 @@ import java.util.InputMismatchException;
 import java.util.List;
 
 import javax.swing.*;
-import net.tfobz.lernkartei.backend.Lernkartei;
-import net.tfobz.lernkartei.backend.VokabeltrainerDB;
+import net.tfobz.lernkartei.backend.*;
 
 public class Einstellungen extends JFrame {
 
@@ -35,11 +35,12 @@ public class Einstellungen extends JFrame {
 	private JLabel[] lsprache;
 	private JButton[] bsprache;
 
+
 	// -66,-412
 	// private JDataChooser c;
 	public Einstellungen(JFrame owner) {
 
-		this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+		this.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
 		this.setBounds(owner.getX(),owner.getY(),500,500);
 		this.setTitle("Vokabeltrainer: Einstellungen");
 		this.setResizable(false);
@@ -163,7 +164,6 @@ public class Einstellungen extends JFrame {
 		//    JDatePickerImpl datePicker = new JDatePickerImpl(datePanel);
 		//    datePicker.setBounds(250,273,200,25);
 		this.addWindowListener(new WindowAdapter() {
-			
 			@Override
 			public void windowClosing(WindowEvent e) {
 				owner.setVisible(true);
@@ -175,17 +175,15 @@ public class Einstellungen extends JFrame {
 		panel = new JPanel();
 		panel.setLayout(new GridLayout(size,2));
 		scroll = new JScrollPane(panel);
-		scroll.setBounds(27,284,441,150);
-		scroll.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
+		scroll.setBounds(27,264,441,170);
+		scroll.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
 		lsprache = new JLabel[size];
 		bsprache = new JButton[size];
 		int hohe = 266;
 
-
-
 		for(int i = 0;i<size;i++) {
 			Lernkartei l = sprachen.get(i);
-			lsprache[i] = new JLabel(l.getWortEinsBeschreibung()+" - "+l.getWortZweiBeschreibung());
+			lsprache[i] = new JLabel(" "+l.getWortEinsBeschreibung()+" - "+l.getWortZweiBeschreibung());
 			lsprache[i].setFont(new Font("Balsamiq Sans", Font.PLAIN, 16));
 			lsprache[i].setBounds(27,hohe+34,290,25);
 
@@ -200,14 +198,10 @@ public class Einstellungen extends JFrame {
 					Fachliste f = new Fachliste(Einstellungen.this,x);
 					f.setVisible(true);
 					setVisible(false);
-
-
 				}
 			});
-
 			panel.add(lsprache[i]);
 			panel.add(bsprache[i]);
-
 			hohe+=34;
 		}
 
