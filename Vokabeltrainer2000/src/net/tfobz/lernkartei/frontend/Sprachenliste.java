@@ -61,6 +61,7 @@ public class Sprachenliste extends JFrame {
 					AbstractButton button = buttons.nextElement();
 					
 					if (button.isSelected()) {
+						contro = false;
 						// Aus dem Text der Sprache wird die Nummer also der Index geholt
 						String stext = button.getText().replaceAll("(\\d+).+", "$1");
 						// Damit wird die Karte in der Liste gefunden

@@ -86,6 +86,8 @@ public class KarteGUI extends JFrame {
 				// Klasse Karte hat kein setGroßKleinschreiben Methode
 				Karte gKarte = new Karte(karte.getNummer(), karte.getWortEins(), karte.getWortZwei(), karte.getRichtung(), grosklein.isSelected());
 				karte = gKarte;
+				revalidate();
+				repaint();
 			}
 		});
 		// Erlaubt es die vorherige Karte anzusehen
@@ -104,7 +106,7 @@ public class KarteGUI extends JFrame {
 					revalidate();
 					repaint();
 				} else {
-					JOptionPane.showMessageDialog(KarteGUI.this, "Man kann nicht weiter zurück gehen");
+					JOptionPane.showMessageDialog(KarteGUI.this, "Es gibt keine nächste Karte");
 				}
 			}
 		});
@@ -144,7 +146,7 @@ public class KarteGUI extends JFrame {
 					revalidate();
 					repaint();
 				} else {
-					JOptionPane.showMessageDialog(KarteGUI.this, "Man kann nicht weiter vor gehen");
+					JOptionPane.showMessageDialog(KarteGUI.this, "Es gibt keine vorige Karte");
 				}
 			}
 		});

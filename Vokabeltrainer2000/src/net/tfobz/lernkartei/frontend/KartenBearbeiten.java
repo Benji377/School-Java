@@ -26,7 +26,8 @@ public class KartenBearbeiten extends JDialog {
 		
 		titel = new JLabel("Bearbeiten der Karte");
 		titel.setFont(new Font("Balsamiq Sans", Font.BOLD, 28));
-		titel.setBounds(88, 17, 290, 36);
+		titel.setHorizontalAlignment(SwingConstants.CENTER);
+		titel.setBounds(85, 17, 330, 36);
 		
 		wort1 = new JLabel("Erstes Wort:");
 		wort1.setFont(new Font("Balsamiq Sans", Font.PLAIN, 20));
@@ -50,7 +51,7 @@ public class KartenBearbeiten extends JDialog {
 		
 		save = new JButton("Speichern");
 		save.setFont(new Font("Balsamiq Sans", Font.PLAIN, 24));
-		save.setBounds(185, 183, 110, 45);
+		save.setBounds(175, 183, 150, 45);
 		save.setHorizontalAlignment(SwingConstants.CENTER);
 		save.addActionListener(new ActionListener() {
 			

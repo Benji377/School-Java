@@ -20,8 +20,6 @@ public class Hauptmenu extends JFrame {
 	private JLabel credits;
 	private JComboBox<String> sprachen;
 	private JButton einstellungen;
-	private ImageIcon front;
-	private JLabel front_carrier;
 	// Berechnet die Position um das JFrame genau in der Mitte des Bildschirm
 	// auszugeben
 	int y = (int) Toolkit.getDefaultToolkit().getScreenSize().getHeight() / 2 - 250;
@@ -140,11 +138,15 @@ public class Hauptmenu extends JFrame {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				abgelaufen = VokabeltrainerDB.getFaecherErinnerung(sprachen.getSelectedIndex());
-				System.out.println("LIII: " + abgelaufen.toString());
-				Karte k = VokabeltrainerDB.getZufaelligeKarte(sprachen.getSelectedIndex(), abgelaufen.get(0).getNummer());
-				KarteGUI k1 = new KarteGUI(Hauptmenu.this, k);
-				k1.setVisible(true);
-				setVisible(false);
+				Karte k = VokabeltrainerDB.getKarte(1);
+				// Karte k = VokabeltrainerDB.getZufaelligeKarte(sprachen.getSelectedIndex(), abgelaufen.get(0).getNummer());
+				if (k != null ) {
+					KarteGUI k1 = new KarteGUI(Hauptmenu.this, k);
+					k1.setVisible(true);
+					setVisible(false);
+				} else {
+					JOptionPane.showMessageDialog(Hauptmenu.this, "Leider ist ein Fehler aufgetreten, versuchen Sie es später erneut");
+				}
 			}
 		});
 
