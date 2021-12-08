@@ -39,8 +39,10 @@ public class KarteGUI extends JFrame {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
+				// Macht den überrangigen Fenster sichtbar
+				owner.setLocation(getX(), getY());
 				owner.setVisible(true);
-				setVisible(false);
+				dispose();
 			}
 		});
 		

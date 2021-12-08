@@ -13,10 +13,8 @@ import javax.swing.*;
 import net.tfobz.lernkartei.backend.*;
 
 public class Einstellungen extends JFrame {
-
 	private JLabel titel1;
 	private JLabel titel2;
-
 	private ImageIcon iimport;
 	private ImageIcon iexport;
 	private JButton bimport;
@@ -25,22 +23,25 @@ public class Einstellungen extends JFrame {
 	private JComboBox<String> isprache;
 	private JComboBox<String> esprache;
 	private JCheckBox check;
-
 	private JFileChooser chooser;
 	private File file;
-
 	private JPanel panel;
 	private JScrollPane scroll;
 	private List<Lernkartei> sprachen;
 	private JLabel[] lsprache;
 	private JButton[] bsprache;
 
-
-	// -66,-412
-	// private JDataChooser c;
+	// Beinhaltet alle Einstellungen zur App (Import, Export, Erinnerung, ...)
 	public Einstellungen(JFrame owner) {
-
-		this.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+		/*
+		this.addWindowListener(new WindowAdapter() {
+			@Override
+			public void windowClosing(WindowEvent e) {
+				owner.setVisible(true);
+			}
+		});
+		 */
+		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 		this.setBounds(owner.getX(),owner.getY(),500,500);
 		this.setTitle("Vokabeltrainer: Einstellungen");
 		this.setResizable(false);
@@ -55,8 +56,9 @@ public class Einstellungen extends JFrame {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
+				owner.setLocation(getX(), getY());
 				owner.setVisible(true);
-				setVisible(false);
+				dispose();
 			}
 		});
 
@@ -64,6 +66,7 @@ public class Einstellungen extends JFrame {
 		titel1.setFont(new Font("Balsamiq Sans",Font.PLAIN,32));
 		titel1.setBounds(140,8,216,36);
 
+		// Ermöglicht es Karten zu importieren
 		bimport = new JButton("Import");
 		bimport.setFont(new Font("Balsamiq Sans",Font.PLAIN,20));
 		bimport.setHorizontalAlignment(SwingConstants.LEFT);
@@ -73,43 +76,35 @@ public class Einstellungen extends JFrame {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-
 				try {
 					int nummer = isprache.getSelectedIndex();
 					if(nummer != 0) {
 						chooser = new JFileChooser();
-
-
 						chooser.showOpenDialog(Einstellungen.this);
 						file = chooser.getSelectedFile();
 						VokabeltrainerDB.importierenKarten(nummer, file.getAbsolutePath());
-
-
-					}
-					else {
+					} else {
 						throw new InputMismatchException("Sie sollen eine Sprache aussuchen");
 					}
 				}catch(InputMismatchException e1) {
 					JOptionPane.showMessageDialog(Einstellungen.this, e1.getMessage(), "Fehler",
 							JOptionPane.ERROR_MESSAGE);
 				}
-
-
 			}
 		});
 		sprachen = new ArrayList<Lernkartei>();
 		sprachen = VokabeltrainerDB.getLernkarteien();
-
+		
 		isprache = new JComboBox<String>();
 		isprache.setBounds(212,85,156,30);
 		isprache.setFont(new Font("Balsamiq Sans", Font.PLAIN, 16));
 		isprache.setEditable(false);
 		isprache.addItem("Sprache");
+		
 		for(int i = 0;sprachen.size()>i;i++) {
 			isprache.addItem(sprachen.get(i).getWortEinsBeschreibung()+" - "+sprachen.get(i).getWortZweiBeschreibung());
 		}
-
-
+		
 		bexport = new JButton("Export");
 		bexport.setFont(new Font("Balsamiq Sans",Font.PLAIN,20));
 		bexport.setHorizontalAlignment(SwingConstants.LEFT);
@@ -142,10 +137,10 @@ public class Einstellungen extends JFrame {
 		esprache.setFont(new Font("Balsamiq Sans", Font.PLAIN, 16));
 		esprache.setEditable(false);
 		esprache.addItem("Sprache");
+		
 		for(int i = 0;sprachen.size()>i;i++) {
 			esprache.addItem(sprachen.get(i).getWortEinsBeschreibung()+" - "+sprachen.get(i).getWortZweiBeschreibung());
 		}
-
 
 		check = new JCheckBox();
 		check.setBounds(384, 137, 100, 30);
@@ -159,19 +154,7 @@ public class Einstellungen extends JFrame {
 		titel2.setFont(new Font("Balsamiq Sans",Font.PLAIN,32));
 		titel2.setBounds(116,208,268,36);
 
-		//    UtilDateModel model = new UtilDateModel();
-		//    JDatePanelImpl datePanel = new JDatePanelImpl(model);
-		//    JDatePickerImpl datePicker = new JDatePickerImpl(datePanel);
-		//    datePicker.setBounds(250,273,200,25);
-		this.addWindowListener(new WindowAdapter() {
-			@Override
-			public void windowClosing(WindowEvent e) {
-				owner.setVisible(true);
-			}
-		});
-
 		int size = sprachen.size();
-
 		panel = new JPanel();
 		panel.setLayout(new GridLayout(size,2));
 		scroll = new JScrollPane(panel);
@@ -204,9 +187,7 @@ public class Einstellungen extends JFrame {
 			panel.add(bsprache[i]);
 			hohe+=34;
 		}
-
-
-
+		
 		Container c = this.getContentPane();
 		c.setLayout(null);
 		c.add(menu);
@@ -215,12 +196,9 @@ public class Einstellungen extends JFrame {
 		c.add(bexport);
 		c.add(s);
 		c.add(titel2);
-		//    c.add(datePicker);
 		c.add(esprache);
 		c.add(isprache);
 		c.add(check);
 		c.add(scroll);
-
 	}
-
 }

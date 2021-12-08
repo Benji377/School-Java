@@ -24,7 +24,7 @@ public class KartenAdder extends JDialog {
 	public KartenAdder(JFrame owner, int nummerLernkartei) {
 		this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		this.setBounds(owner.getX(), owner.getY(), 500, 278);
-		this.setTitle("Karten bearbeiten");
+		this.setTitle("Karten hinzufügen");
 		this.setResizable(false);
 		this.setModal(true);
 		
@@ -48,7 +48,7 @@ public class KartenAdder extends JDialog {
 		inwort2.setFont(new Font("Balsamiq Sans", Font.PLAIN, 20));
 		inwort2.setBounds(151, 127, 333, 34);
 		
-		save = new JButton("Save");
+		save = new JButton("Speichern");
 		save.setFont(new Font("Balsamiq Sans", Font.PLAIN, 24));
 		save.setBounds(185, 183, 110, 45);
 		save.setHorizontalAlignment(SwingConstants.CENTER);

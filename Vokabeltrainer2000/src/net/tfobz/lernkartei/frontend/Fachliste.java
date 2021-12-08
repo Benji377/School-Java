@@ -7,6 +7,8 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 import java.util.Date;
 import java.util.List;
 import javax.swing.*;
@@ -37,9 +39,10 @@ public class Fachliste extends JFrame{
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				// Macht den überrangigen Fenster sichtbar und diesen unsichtbar
+				// Macht den überrangigen Fenster sichtbar
+				owner.setLocation(getX(), getY());
 				owner.setVisible(true);
-				setVisible(false);
+				dispose();
 			}
 		});
 		// Ein Knopf um alle Fächer zu löschen (Wegen Backend kann man nicht einzelne köschen)

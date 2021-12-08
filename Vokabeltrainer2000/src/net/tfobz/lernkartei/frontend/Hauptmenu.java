@@ -119,7 +119,15 @@ public class Hauptmenu extends JFrame {
 		sprachedit.setFont(new Font("Balsamiq Sans", Font.PLAIN, 16));
 		sprachedit.setHorizontalAlignment(SwingConstants.CENTER);
 		sprachedit.setBounds(16, 294, 180, 40);
-		// TODO: Add Actionlistener
+		sprachedit.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				Sprachenliste sl = new Sprachenliste(Hauptmenu.this);
+				sl.setVisible(true);
+				setVisible(false);
+			}
+		});
 
 		// Knopf der das gesamte lernen eigentlich startet. Es wählt eine zufällige Karte 
 		// und man kann dann anfangen diese zu lernen
