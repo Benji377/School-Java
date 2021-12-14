@@ -83,12 +83,15 @@ public class Fachliste extends JFrame{
 				Fach f;
 				// Wenn die Eingabe gültig ist wird ein neues Fach angelegt
 				// Ansonsten wird standardmäßig 100 Tage verwendet
-				if (inp != null && inp.length() > 0)
+				
+				if (inp != null && inp.length() >= 0) {
 					f = new Fach(-1, null, Integer.parseInt(inp), null);
-				else
-					f = new Fach(-1, null, 0, null);
-				VokabeltrainerDB.hinzufuegenFach(nummerLernkartei, f);
-				addContent(nummerLernkartei);
+					VokabeltrainerDB.hinzufuegenFach(nummerLernkartei, f);
+					addContent(nummerLernkartei);
+				}
+					
+				
+				
 			}
 		});
 		

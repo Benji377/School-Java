@@ -10,6 +10,9 @@ import javax.swing.*;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
+import org.junit.experimental.theories.ParameterSignature;
+
+import net.tfobz.lernkartei.backend.Fach;
 import net.tfobz.lernkartei.backend.Karte;
 import net.tfobz.lernkartei.backend.VokabeltrainerDB;
 
@@ -70,7 +73,7 @@ public class Kartenliste extends JFrame{
 						// Aus dem Text der Karte wird die Nummer also der Index geholt
 						String stext = button.getText().replaceAll("(\\d+).+", "$1");
 						// Damit wird die Karte in der Liste gefunden
-						Karte kk = kartenListe.get(Integer.parseInt(stext)-1);
+						Karte kk = VokabeltrainerDB.getKarte(Integer.parseInt(stext));
 						// Dann öffnet sich ein Fenster wo der Nutzer die Karte bearbeiten kann
 						KartenBearbeiten kb = new KartenBearbeiten(Kartenliste.this, kk);
 						kb.setVisible(true);
@@ -104,7 +107,7 @@ public class Kartenliste extends JFrame{
 					if (button.isSelected()) {
 						contro = false;
 						String stext = button.getText().replaceAll("(\\d+).+", "$1");
-						Karte kk = kartenListe.get(Integer.parseInt(stext)-1);
+						Karte kk = VokabeltrainerDB.getKarte(Integer.parseInt(stext));
 						// Es wird ein Dialog zum Bestätigung der Aktion ausgerufen
 						int ans = JOptionPane.showConfirmDialog(Kartenliste.this, "Wollen Sie wirklich diese Karte löschen? \n "
 								+ "Dies kann nicht rückgängig gemacht werden");
@@ -146,9 +149,10 @@ public class Kartenliste extends JFrame{
 		title.setBounds(10, 80, 474, 32);
 		
 		// Ein Spinner um die Karten nach Fächer durchzugehen
-		int fachcount = VokabeltrainerDB.getFaecher(nummerLernkartei).size();
+		List<Fach> fachcount = VokabeltrainerDB.getFaecher(nummerLernkartei);
+		
 		// Modell: standard, minimu, maximum, step
-		SpinnerModel model = new SpinnerNumberModel(1, 1, fachcount, 1);
+		SpinnerModel model = new SpinnerNumberModel(fachcount.get(0).getNummer(), fachcount.get(0).getNummer(), fachcount.get(fachcount.size()-1).getNummer(), 1);
 		spinn = new JSpinner(model);
 		spinn.setBounds(82, 123, 46, 24);
 		spinn.setFont(new Font("Balsamiq Sans", Font.PLAIN, 13));

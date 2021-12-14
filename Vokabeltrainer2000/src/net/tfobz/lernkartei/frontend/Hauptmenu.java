@@ -3,6 +3,8 @@ package net.tfobz.lernkartei.frontend;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.List;
@@ -27,7 +29,7 @@ public class Hauptmenu extends JFrame {
 	private JButton kartenedit;
 	private JButton sprachedit;
 	private JButton lernen;
-	private ArrayList<Lernkartei> sprachenliste;
+	private List<Lernkartei> sprachenliste;
 	private List<Fach> abgelaufen;
 
 	public static void main(String[] args) {
@@ -60,26 +62,26 @@ public class Hauptmenu extends JFrame {
 		this.titel = new JLabel("Vokabeltrainer2000");
 		this.titel.setBounds(67, 70, 372, 48);
 		this.titel.setFont(new Font("Balsamiq Sans", Font.BOLD, 40));
-		sprachenliste = new ArrayList<Lernkartei>();
-		sprachenliste = (ArrayList<Lernkartei>) VokabeltrainerDB.getLernkarteien();
-
+		sprachenliste = VokabeltrainerDB.getLernkarteien();
 
 		// Enthält die Auswahl an allen möglichen Lernkarteien
 		this.sprachen = new JComboBox<String>();
 		this.sprachen.setBounds(64, 150, 372, 38);
 		this.sprachen.setFont(new Font("Balsamiq Sans", Font.PLAIN, 24));
 		this.sprachen.setEditable(false);
+		// labgelaufen = VokabeltrainerDB.getLernkarteienErinnerung();
 
 		this.sprachen.addItem("Sprachen");
-		for(int i = 0;sprachenliste.size()>i;i++) {
-			sprachen.addItem(sprachenliste.get(i).getWortEinsBeschreibung()+" - "+sprachenliste.get(i).getWortZweiBeschreibung());
-			sprachen.addItem(sprachenliste.get(i).getWortZweiBeschreibung()+" - "+sprachenliste.get(i).getWortEinsBeschreibung());
+		for (int i = 0; sprachenliste.size() > i; i++) {
+			sprachen.addItem(sprachenliste.get(i).getWortEinsBeschreibung() + " - "
+					+ sprachenliste.get(i).getWortZweiBeschreibung());
+
 		}
 
 		this.credits = new JLabel("Created by Mick Christian and Demetz Benjamin");
 		this.credits.setBounds(190, 430, 290, 21);
 		this.credits.setFont(new Font("Balsamiq Sans", Font.PLAIN, 13));
-
+		System.out.println(sprachenliste);
 		// Knopf der eine Liste von Karten anzeigt und diese bearbeiten lässt.
 		// Man muss dabei zuerst eine Lernkartei auswählen
 		kartenedit = new JButton("Karten bearbeiten");
@@ -90,24 +92,21 @@ public class Hauptmenu extends JFrame {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				int nummer = sprachen.getSelectedIndex();
-				int auswahl = 0;
+				int nummer = sprachenliste.get(sprachen.getSelectedIndex() - 1).getNummer();
+				System.out.println(sprachenliste.get(sprachen.getSelectedIndex() - 1));
+				System.out.println(nummer);
+
 				try {
-					if(nummer != 0) {
-						if (nummer % 2 == 0) {
-							auswahl = nummer / 2;
-						} else {
-							auswahl = (nummer + 1) / 2;
-						}
-						Kartenliste k =  new Kartenliste(Hauptmenu.this,auswahl);
+					if (nummer != 0) {
+						Kartenliste k = new Kartenliste(Hauptmenu.this, nummer);
 						k.setVisible(true);
 						setVisible(false);
-					}else {
+
+					} else {
 						throw new InputMismatchException("Sie sollen eine Sprache aussuchen");
 					}
-				}catch(InputMismatchException e1) {
-					JOptionPane.showMessageDialog(Hauptmenu.this, e1.getMessage(), "Fehler",
-							JOptionPane.ERROR_MESSAGE);
+				} catch (InputMismatchException e1) {
+					JOptionPane.showMessageDialog(Hauptmenu.this, e1.getMessage(), "Fehler", JOptionPane.ERROR_MESSAGE);
 				}
 			}
 		});
@@ -118,35 +117,53 @@ public class Hauptmenu extends JFrame {
 		sprachedit.setHorizontalAlignment(SwingConstants.CENTER);
 		sprachedit.setBounds(16, 294, 180, 40);
 		sprachedit.addActionListener(new ActionListener() {
-			
+
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				Sprachenliste sl = new Sprachenliste(Hauptmenu.this);
-				sl.setVisible(true);
+				Sprachenliste s = new Sprachenliste(Hauptmenu.this);
+				s.setVisible(true);
 				setVisible(false);
+
 			}
 		});
 
-		// Knopf der das gesamte lernen eigentlich startet. Es wählt eine zufällige Karte 
+		// Knopf der das gesamte lernen eigentlich startet. Es wählt eine zufällige
+		// Karte
 		// und man kann dann anfangen diese zu lernen
 		lernen = new JButton("Zufällige Karte lernen");
 		lernen.setFont(new Font("Balsamiq Sans", Font.PLAIN, 16));
 		lernen.setHorizontalAlignment(SwingConstants.CENTER);
-		lernen.setBounds(150,360,200,40);
+		lernen.setBounds(150, 360, 200, 40);
 		lernen.addActionListener(new ActionListener() {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				abgelaufen = VokabeltrainerDB.getFaecherErinnerung(sprachen.getSelectedIndex());
-				Karte k = VokabeltrainerDB.getKarte(1);
-				// Karte k = VokabeltrainerDB.getZufaelligeKarte(sprachen.getSelectedIndex(), abgelaufen.get(0).getNummer());
-				if (k != null ) {
-					KarteGUI k1 = new KarteGUI(Hauptmenu.this, k);
-					k1.setVisible(true);
-					setVisible(false);
-				} else {
-					JOptionPane.showMessageDialog(Hauptmenu.this, "Leider ist ein Fehler aufgetreten, versuchen Sie es später erneut");
+				try {
+					int nummer = sprachenliste.get(sprachen.getSelectedIndex() - 1).getNummer();
+					if (nummer != 0) {
+
+						abgelaufen = VokabeltrainerDB.getFaecherErinnerung(nummer);
+						if (abgelaufen.isEmpty() == false) {
+							Karte k = VokabeltrainerDB.getZufaelligeKarte(nummer, abgelaufen.get(0).getNummer());
+							if (k != null) {
+								KarteGUI k1 = new KarteGUI(Hauptmenu.this, k, nummer, abgelaufen.get(0).getNummer());
+								k1.setVisible(true);
+								setVisible(false);
+							}
+							else {
+								throw new InputMismatchException("Es gibt keine Karten");
+							}
+							
+						} else {
+							throw new InputMismatchException("Bei diesem Fach ist die Erinnerung abgelaufen");
+						}
+					} else {
+						throw new InputMismatchException("Sie sollen eine Sprache aussuchen");
+					}
+				} catch (InputMismatchException e1) {
+					JOptionPane.showMessageDialog(Hauptmenu.this, e1.getMessage(), "Fehler", JOptionPane.ERROR_MESSAGE);
 				}
+
 			}
 		});
 

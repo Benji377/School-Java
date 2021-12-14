@@ -1,6 +1,8 @@
 package net.tfobz.lernkartei.frontend;
 
 import javax.swing.*;
+
+import net.tfobz.lernkartei.backend.Fach;
 import net.tfobz.lernkartei.backend.Lernkartei;
 import net.tfobz.lernkartei.backend.VokabeltrainerDB;
 import java.awt.*;
@@ -58,9 +60,11 @@ public class SprachenAdder extends JDialog {
 				// kontrolliert die Gültigkeit
 				if (!wortuno.isEmpty() && !wortduo.isEmpty()) {
 					// Man legt dann eine neue Karte mit diesen beiden Wörtern an
-					lk = new Lernkartei();
-					lk.setWortEinsBeschreibung(wortuno);
-					lk.setWortZweiBeschreibung(wortduo);
+					lk = new Lernkartei("Vokabeltrainer "+wortuno+" "+wortduo,wortuno,wortduo,true,false);
+					Fach f;
+					f = new Fach(-1, null, 0, null);
+					//VokabeltrainerDB.hinzufuegenFach(lk.getNummer(), f);
+					System.out.println(lk);
 					// speichert die Sprache in der Database ab
 					VokabeltrainerDB.hinzufuegenLernkartei(lk);
 				}

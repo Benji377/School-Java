@@ -33,14 +33,7 @@ public class Einstellungen extends JFrame {
 
 	// Beinhaltet alle Einstellungen zur App (Import, Export, Erinnerung, ...)
 	public Einstellungen(JFrame owner) {
-		/*
-		this.addWindowListener(new WindowAdapter() {
-			@Override
-			public void windowClosing(WindowEvent e) {
-				owner.setVisible(true);
-			}
-		});
-		 */
+	
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 		this.setBounds(owner.getX(),owner.getY(),500,500);
 		this.setTitle("Vokabeltrainer: Einstellungen");
@@ -57,7 +50,8 @@ public class Einstellungen extends JFrame {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				owner.setLocation(getX(), getY());
-				owner.setVisible(true);
+				Hauptmenu a = new Hauptmenu();
+				a.setVisible(true);
 				dispose();
 			}
 		});
@@ -77,7 +71,7 @@ public class Einstellungen extends JFrame {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				try {
-					int nummer = isprache.getSelectedIndex();
+					int nummer = sprachen.get( isprache.getSelectedIndex()-1).getNummer();
 					if(nummer != 0) {
 						chooser = new JFileChooser();
 						chooser.showOpenDialog(Einstellungen.this);
@@ -115,7 +109,7 @@ public class Einstellungen extends JFrame {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				try {
-					int nummer = esprache.getSelectedIndex();
+					int nummer = sprachen.get( esprache.getSelectedIndex()-1).getNummer();
 					if(nummer != 0) {
 						chooser = new JFileChooser();
 						chooser.showSaveDialog(Einstellungen.this);
@@ -173,7 +167,7 @@ public class Einstellungen extends JFrame {
 			bsprache[i] = new JButton("Datum einstellen");
 			bsprache[i].setFont(new Font("Balsamiq Sans", Font.PLAIN, 16));
 			bsprache[i].setBounds(317,hohe+34,130,25);
-			final int x = i+1;
+			final int x = sprachen.get(i).getNummer();
 			bsprache[i].addActionListener(new ActionListener() {
 
 				@Override

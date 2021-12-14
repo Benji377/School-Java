@@ -38,7 +38,8 @@ public class Sprachenliste extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				// Macht den überrangigen Fenster sichtbar
 				owner.setLocation(getX(), getY());
-				owner.setVisible(true);
+				Hauptmenu a = new Hauptmenu();
+				a.setVisible(true);
 				dispose();
 			}
 		});
@@ -65,7 +66,7 @@ public class Sprachenliste extends JFrame {
 						// Aus dem Text der Sprache wird die Nummer also der Index geholt
 						String stext = button.getText().replaceAll("(\\d+).+", "$1");
 						// Damit wird die Karte in der Liste gefunden
-						Lernkartei lk = sprachenListe.get(Integer.parseInt(stext)-1);
+						Lernkartei lk = VokabeltrainerDB.getLernkartei(Integer.parseInt(stext));
 						// Dann öffnet sich ein Fenster wo der Nutzer die Sprache bearbeiten kann
 						SprachenBearbeiten sb = new SprachenBearbeiten(Sprachenliste.this, lk);
 						sb.setVisible(true);
@@ -99,7 +100,7 @@ public class Sprachenliste extends JFrame {
 					if (button.isSelected()) {
 						contro = false;
 						String stext = button.getText().replaceAll("(\\d+).+", "$1");
-						Lernkartei lk = sprachenListe.get(Integer.parseInt(stext)-1);
+						Lernkartei lk = VokabeltrainerDB.getLernkartei(Integer.parseInt(stext));
 						// Es wird ein Dialog zum Bestätigung der Aktion ausgerufen
 						int ans = JOptionPane.showConfirmDialog(Sprachenliste.this, "Wollen Sie wirklich diese Sprache löschen? \n "
 								+ "Dies kann nicht rückgängig gemacht werden");
