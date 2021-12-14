@@ -23,6 +23,9 @@ public class KarteGUI extends JFrame {
 	private JTextField input;
 	private Karte karte;
 
+	// Enthält ein visueller Überblick über Eigenschaften einer Karte
+	// Dabei muss dem Kusntroktor aber alles übergeben werden:
+	// Karte zum visualisiern, Lernkartei in der sich die Karte befindet und nächste Karte
 	public KarteGUI(JFrame owner, Karte k, int lernkartei, int f) {
 		this.setTitle("Vokabel");
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -124,14 +127,12 @@ public class KarteGUI extends JFrame {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
+				// Holt die nächste übergebene Karte 
 				Karte front = VokabeltrainerDB.getZufaelligeKarte(lernkartei, f);
-				if (front != null&&front != karte) {
-
+				if (front != null && front != karte) {
 					KarteGUI k1 = new KarteGUI(KarteGUI.this, front, lernkartei, f);
 					setVisible(false);
 					k1.setVisible(true);
-					
-
 				} else {
 					JOptionPane.showMessageDialog(KarteGUI.this, "Es gibt keine nächste Karte");
 				}

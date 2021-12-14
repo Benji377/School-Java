@@ -72,6 +72,7 @@ public class Sprachenliste extends JFrame {
 						sb.setVisible(true);
 					}
 				}
+				// "contro" wird benutzt um zu kontrolliere ob eine Sprache bereist verarbeite wurde oder nicht
 				if (contro) {
 					JOptionPane.showMessageDialog(Sprachenliste.this, "Sie müssen zuerst eine Sprache auswählen");
 				} else {

@@ -25,6 +25,8 @@ public class Fachliste extends JFrame{
 	private JLabel[] facher;
 	private List<Fach> facherListe;
 	
+	// Zeigt alle Fächer einer Lernkartei dar und gibt dem Benutzer die Möglichkeit diese zu bearbeiten
+	// Der Index der Lernkartei wird dabei übergeben
 	public Fachliste(JFrame owner, int nummerLernkartei) {
 		this.setTitle("Fächerliste");
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -118,8 +120,13 @@ public class Fachliste extends JFrame{
 		c.add(this.title);
 		c.add(this.scrollPane);
 	}
-	
+	/**
+	 * Diese Methode ist dazu da, den Inhalt des JFrames neuzuladen,
+	 * wenn neue Fächer hinzugefügt oder bearbeitet werden
+	 * @param nummerLernkartei
+	 */
 	private void addContent(int nummerLernkartei) {
+		// Zuerst wird das vorige gelöscht
 		fachcontent.removeAll();
 		// Holt eine Liste aller Fächer aus dem Database
 		facherListe = VokabeltrainerDB.getFaecher(nummerLernkartei);

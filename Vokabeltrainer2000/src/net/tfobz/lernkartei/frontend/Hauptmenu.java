@@ -16,7 +16,7 @@ import net.tfobz.lernkartei.backend.Karte;
 import net.tfobz.lernkartei.backend.Lernkartei;
 import net.tfobz.lernkartei.backend.VokabeltrainerDB;
 
-// Icons from: https://www.freepik.com/
+// Icons von: https://www.freepik.com/
 public class Hauptmenu extends JFrame {
 	private JLabel titel;
 	private JLabel credits;
@@ -37,7 +37,7 @@ public class Hauptmenu extends JFrame {
 		h.setVisible(true);
 	}
 
-	// Balsamiq Koordinaten: X: 412 Y: 66
+	// Ist das Hauptfenster des gesamten Programms
 	public Hauptmenu() {
 		this.setTitle("Vokabeltrainer2000");
 		this.setBounds(x, y, 500, 500);
@@ -69,19 +69,18 @@ public class Hauptmenu extends JFrame {
 		this.sprachen.setBounds(64, 150, 372, 38);
 		this.sprachen.setFont(new Font("Balsamiq Sans", Font.PLAIN, 24));
 		this.sprachen.setEditable(false);
-		// labgelaufen = VokabeltrainerDB.getLernkarteienErinnerung();
-
 		this.sprachen.addItem("Sprachen");
 		for (int i = 0; sprachenliste.size() > i; i++) {
 			sprachen.addItem(sprachenliste.get(i).getWortEinsBeschreibung() + " - "
 					+ sprachenliste.get(i).getWortZweiBeschreibung());
-
 		}
 
+		// Nur estetischen Zweck: Wer das Programm gemacht hat
 		this.credits = new JLabel("Created by Mick Christian and Demetz Benjamin");
 		this.credits.setBounds(190, 430, 290, 21);
 		this.credits.setFont(new Font("Balsamiq Sans", Font.PLAIN, 13));
-		System.out.println(sprachenliste);
+		//DEBUG: System.out.println(sprachenliste);
+		
 		// Knopf der eine Liste von Karten anzeigt und diese bearbeiten lässt.
 		// Man muss dabei zuerst eine Lernkartei auswählen
 		kartenedit = new JButton("Karten bearbeiten");
@@ -92,21 +91,25 @@ public class Hauptmenu extends JFrame {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				int nummer = sprachenliste.get(sprachen.getSelectedIndex() - 1).getNummer();
-				System.out.println(sprachenliste.get(sprachen.getSelectedIndex() - 1));
-				System.out.println(nummer);
-
-				try {
-					if (nummer != 0) {
-						Kartenliste k = new Kartenliste(Hauptmenu.this, nummer);
-						k.setVisible(true);
-						setVisible(false);
-
-					} else {
-						throw new InputMismatchException("Sie sollen eine Sprache aussuchen");
+				// Kontrolliert dass eine Sprache ausgewählt wurde
+				if (sprachen.getSelectedIndex() == 0) {
+					JOptionPane.showMessageDialog(Hauptmenu.this, "Bitte wähle zuerst eine Sprache aus");
+				} else {
+					int nummer = sprachenliste.get(sprachen.getSelectedIndex() - 1).getNummer();
+					//DEBUG: System.out.println(sprachenliste.get(sprachen.getSelectedIndex() - 1));
+					//DEBUG: System.out.println(nummer);
+					try {
+						if (nummer != 0) {
+							// Öffnte das JFrame zur Kartenliste
+							Kartenliste k = new Kartenliste(Hauptmenu.this, nummer);
+							k.setVisible(true);
+							setVisible(false);
+						} else {
+							throw new InputMismatchException("Sie sollen eine Sprache aussuchen");
+						}
+					} catch (InputMismatchException e1) {
+						JOptionPane.showMessageDialog(Hauptmenu.this, e1.getMessage(), "Fehler", JOptionPane.ERROR_MESSAGE);
 					}
-				} catch (InputMismatchException e1) {
-					JOptionPane.showMessageDialog(Hauptmenu.this, e1.getMessage(), "Fehler", JOptionPane.ERROR_MESSAGE);
 				}
 			}
 		});
@@ -123,13 +126,11 @@ public class Hauptmenu extends JFrame {
 				Sprachenliste s = new Sprachenliste(Hauptmenu.this);
 				s.setVisible(true);
 				setVisible(false);
-
 			}
 		});
 
 		// Knopf der das gesamte lernen eigentlich startet. Es wählt eine zufällige
-		// Karte
-		// und man kann dann anfangen diese zu lernen
+		// Karte und man kann dann anfangen diese zu lernen
 		lernen = new JButton("Zufällige Karte lernen");
 		lernen.setFont(new Font("Balsamiq Sans", Font.PLAIN, 16));
 		lernen.setHorizontalAlignment(SwingConstants.CENTER);
@@ -139,31 +140,36 @@ public class Hauptmenu extends JFrame {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				try {
-					int nummer = sprachenliste.get(sprachen.getSelectedIndex() - 1).getNummer();
-					if (nummer != 0) {
-
-						abgelaufen = VokabeltrainerDB.getFaecherErinnerung(nummer);
-						if (abgelaufen.isEmpty() == false) {
-							Karte k = VokabeltrainerDB.getZufaelligeKarte(nummer, abgelaufen.get(0).getNummer());
-							if (k != null) {
-								KarteGUI k1 = new KarteGUI(Hauptmenu.this, k, nummer, abgelaufen.get(0).getNummer());
-								k1.setVisible(true);
-								setVisible(false);
-							}
-							else {
-								throw new InputMismatchException("Es gibt keine Karten");
-							}
-							
-						} else {
-							throw new InputMismatchException("Bei diesem Fach ist die Erinnerung abgelaufen");
-						}
+					// Kontrolliert wiederum dass eine Sprache ausgewählt wurde
+					if (sprachen.getSelectedIndex() == 0) {
+						JOptionPane.showMessageDialog(Hauptmenu.this, "Bitte wähle zuerst eine Sprache aus");
 					} else {
-						throw new InputMismatchException("Sie sollen eine Sprache aussuchen");
+						int nummer = sprachenliste.get(sprachen.getSelectedIndex() - 1).getNummer();
+						if (nummer != 0) {
+							// Kontrolliert ob es Fächer gibt, die man zuerts lernen muss
+							abgelaufen = VokabeltrainerDB.getFaecherErinnerung(nummer);
+							if (abgelaufen.isEmpty() == false) {
+								// Wenn keine Fächer abgelaufen sind wird ganz einfach eine zufällige Karte gelernt
+								Karte k = VokabeltrainerDB.getZufaelligeKarte(nummer, abgelaufen.get(0).getNummer());
+								if (k != null) {
+									// Sicherheitshalber wird noch kontrolliert dass die Karte nicht null ist
+									KarteGUI k1 = new KarteGUI(Hauptmenu.this, k, nummer, abgelaufen.get(0).getNummer());
+									k1.setVisible(true);
+									setVisible(false);
+								} else {
+									throw new InputMismatchException("Es gibt keine Karten");
+								}
+								
+							} else {
+								throw new InputMismatchException("Bei diesem Fach ist die Erinnerung abgelaufen");
+							}
+						} else {
+							throw new InputMismatchException("Sie sollen eine Sprache aussuchen");
+						}
 					}
 				} catch (InputMismatchException e1) {
 					JOptionPane.showMessageDialog(Hauptmenu.this, e1.getMessage(), "Fehler", JOptionPane.ERROR_MESSAGE);
 				}
-
 			}
 		});
 
