@@ -5,7 +5,7 @@ import java.util.GregorianCalendar;
 
 public class Gehaltskonto extends Konto {
 	
-	protected static double startueberziehung;
+	protected static double startueberziehung = -5;
 	protected double ueberziehung;
 	
 	/**
@@ -14,12 +14,7 @@ public class Gehaltskonto extends Konto {
 	 * welcher durch setStartueberziehung gesetzt wurde, für das Gehaltskonto eingestellt 
 	 */
 	public Gehaltskonto() {
-		try {
-			this.setUeberziehung(getStartueberziehung());
-		} catch (KontoException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		this.startueberziehung = Gehaltskonto.startueberziehung;
 	}
 
 	/**
@@ -60,27 +55,44 @@ public class Gehaltskonto extends Konto {
 
 	@Override
 	public double getZinsen() {
-		Calendar calOne = Calendar.getInstance();
-		int dayOfYear = calOne.get(Calendar.DAY_OF_YEAR);
-	    int year = calOne.get(Calendar.YEAR);
-	    System.out.println("Current Year: "+year);
-	    Calendar calTwo = new GregorianCalendar(year, 11, 31);
-	    int day = calTwo.get(Calendar.DAY_OF_YEAR);
-	    System.out.println("Days in current year: "+day);
-	    int total_days = day - dayOfYear;
-	    System.out.println("Total " + total_days + " days remaining in "+year);
-		return 0;
+		double ret = 0;
+		if (getKontostand() > 0) {
+			// Erstelt ein Kalender
+			Calendar calOne = Calendar.getInstance();
+			// Erhält das heutige Datum und Jahr
+			int dayOfYear = calOne.get(Calendar.DAY_OF_YEAR);
+		    int year = calOne.get(Calendar.YEAR);
+		    System.out.println("Current Year: "+year);
+		    Calendar calTwo = new GregorianCalendar(year, 11, 31);
+		    int day = calTwo.get(Calendar.DAY_OF_YEAR);
+		    System.out.println("Days in current year: "+day);
+		    int total_days = day - dayOfYear;
+		    System.out.println("Total " + total_days + " days remaining in "+year);
+		    // Mathematische Formel
+		    ret = (getKontostand() * getZinssatz() * total_days) / (100 * day);
+		}
+		return ret;
 	}
 
 	@Override
 	public double getSpesen() {
-		// TODO Auto-generated method stub
-		return 0;
+		double ret = 0;
+		if (getKontostand() < 0)
+			ret = 50;
+		return ret;
 	}
 
 	@Override
 	public void buchen(double betrag) throws KontoException {
-		// TODO Auto-generated method stub
-		
+		if (betrag < getUeberziehung()) {
+			this.kontostand = getKontostand() + betrag;
+		} else {
+			throw new KontoException("Man kann nur Beträge innerhalb der Überziehung buchen");
+		}
+	}
+	
+	@Override
+	public String toString() {
+		return super.toString() + " Überziehung: " + getUeberziehung();
 	}
 }
