@@ -102,7 +102,7 @@ public class MeineDefaultListe implements MeineListe
 			public boolean setzenAktuellesElement(Object element) {	
 				boolean ret = false;
 				if (element != null && this.aktuellesElem != null) {
-					this.aktuellesElem = (ListenElement) element;
+					this.aktuellesElem = new ListenElement(element, this.aktuellesElem.naechstesElem);
 					ret = true;
 				}
 				return ret;
