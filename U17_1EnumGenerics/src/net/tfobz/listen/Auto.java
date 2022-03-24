@@ -23,5 +23,5 @@ public class Auto
 	}
 	public int getErstzulassung() {
 		return this.erstzulassung;
-	}
+	}	
 }

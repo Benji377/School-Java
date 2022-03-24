@@ -41,7 +41,7 @@ public class Uebung1 {
 	}
 
 	public static void main(String[] args) {
-		//rechne(1.45,0.79,19.9,"Ware",-3.0,1.5,"Pfand",-10,"Gutschein");
+		rechne(1.45,0.79,19.9,"Ware",-3.0,1.5,"Pfand",-10,"Gutschein");
 		zaehlezahlen(6, 43542, 3, 2, 4, 0, 1, 8, 1, 4);
 	}
 
